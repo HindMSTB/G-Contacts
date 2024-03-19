@@ -1,0 +1,391 @@
+********************************************************************************
+product = Open Liberty 24.0.0.2 (wlp-1.0.86.cl240220240212-1928)
+wlp.install.dir = C:/Users/user/Desktop/EST GI/g-note/target/liberty/wlp/
+java.home = C:\Program Files\Java\jdk-21
+java.version = 21.0.2
+java.runtime = Java(TM) SE Runtime Environment (21.0.2+13-LTS-58)
+os = Windows 10 (10.0; amd64) (fr_FR)
+process = 12628@DESKTOP-2FC2OC6
+Classpath = C:\Users\user\Desktop\EST GI\g-note\target\liberty\wlp\bin\tools\ws-server.jar
+Java Library path = C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\app\user\product\11.2.0\dbhome_1\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\oraclexe\app\oracle\product\11.2.0\server\bin;"C:\xampp\php;C:\WINDOWS\system32";C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Git\cmd;C:\xampp12\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Java\jdk-21\bin;C:\Program Files\apache-maven-3.9.6-bin\apache-maven-3.9.6\bin;C:\Windows\System32\windowsPowerShell\v1.0\;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Windows\System32;C:\WINDOWS\System32\cmd\;C:\WINDOWS\system32\cmd;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.2\bin;C:\Users\user\AppData\Roaming\Composer\vendor\bin;C:\Users\user\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\System Tools\cmd;.
+********************************************************************************
+[11/03/2024 18:30:00:052 WET] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0001I: Le serveur g-noteServer a été lancé.
+[11/03/2024 18:30:31:718 WET] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           I CWWKE0002I: Noyau démarré après 33,47 secondes
+[11/03/2024 18:30:32:016 WET] 0000002f com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0007I: Mise à jour de fonction démarrée.
+[11/03/2024 18:30:43:106 WET] 00000022 com.ibm.ws.security.registry.basic.internal.BasicRegistry    W CWWKS3103W: Aucun utilisateur n'est défini pour la configuration BasicRegistry dont l'ID est com.ibm.ws.security.registry.basic.config[basic].
+[11/03/2024 18:30:43:204 WET] 00000022 com.ibm.ws.security.ready.internal.SecurityReadyServiceImpl  I CWWKS0007I: Le service de sécurité démarre...
+[11/03/2024 18:30:44:170 WET] 0000003c com.ibm.ws.app.manager.internal.monitor.DropinMonitor        A CWWKZ0058I: Recherche d'applications dans dropins.
+[11/03/2024 18:30:45:879 WET] 0000003a com.ibm.ws.cache.ServerCache                                 I DYNA1001I: L'initialisation de l'instance WebSphere Dynamic Cache nommée baseCache a abouti.
+[11/03/2024 18:30:45:943 WET] 0000003a com.ibm.ws.cache.ServerCache                                 I DYNA1071I: Le fournisseur de cache default est en cours d'utilisation.
+[11/03/2024 18:30:45:951 WET] 0000003a com.ibm.ws.cache.CacheServiceImpl                            I DYNA1056I: Dynamic Cache (cache des objets) a pu s'initialiser.
+[11/03/2024 18:30:46:916 WET] 0000002b com.ibm.ws.ssl.config.WSKeyStore                             A CWPKI0820A: Le magasin de clés par défaut a été créé à l'aide de la variable d'environnement 'keystore_password'.
+[11/03/2024 18:30:47:605 WET] 0000002b com.ibm.ws.ssl.config.WSKeyStore                             I Successfully loaded default keystore: C:/Users/user/Desktop/EST GI/g-note/target/liberty/wlp/usr/servers/g-noteServer/resources/security/key.p12 of type: PKCS12
+[11/03/2024 18:30:48:751 WET] 00000022 com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSID0108I: Le serveur JMS a démarré.  
+[11/03/2024 18:30:48:822 WET] 00000032 com.ibm.ws.security.token.ltpa.internal.LTPAKeyCreateTask    I CWWKS4105I: La configuration LTPA est prête après 0,038 secondes.
+[11/03/2024 18:30:48:856 WET] 00000022 com.ibm.ws.security.ready.internal.SecurityReadyServiceImpl  I CWWKS0008I: Le service de sécurité est prêt.
+[11/03/2024 18:30:48:872 WET] 00000022 ibm.ws.security.authentication.internal.jaas.JAASServiceImpl I CWWKS1123I: Le plug-in d'authentification de collectivité avec le nom de classe NullCollectiveAuthenticationPlugin a été activé. 
+[11/03/2024 18:30:49:695 WET] 00000022 com.ibm.ws.security.jaspi.AuthConfigFactoryWrapper           I CWWKS1655I: La classe com.ibm.ws.security.jaspi.ProviderRegistry AuthConfigFactory de JASPIC (Java Authentication SPI for Containers) par défaut est utilisée car la propriété de sécurité Java authconfigprovider.factory n'est pas définie. 
+[11/03/2024 18:30:49:862 WET] 0000003b cxf.cxf.core.3.2.jakarta:1.0.86.cl240220240212-1928(id=286)] I Aries Blueprint packages not available. So namespaces will not be registered
+[11/03/2024 18:30:50:045 WET] 0000002b org.apache.cxf.ext.logging.osgi.Activator                    I CXF message logging feature disabled
+[11/03/2024 18:30:51:595 WET] 0000003c com.ibm.ws.transport.iiop.internal.ORBWrapperInternal        A CWWKI0001I: Le serveur de noms CORBA est maintenant disponible sur corbaloc:iiop:localhost:2809/NameService.
+[11/03/2024 18:30:52:536 WET] 00000031 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Démarrage de l'application g-note.
+[11/03/2024 18:30:52:540 WET] 00000031 bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: L'application g-note utilise la définition d'application souple à l'emplacement C:\Users\user\Desktop\EST GI\g-note\target\liberty\wlp\usr\servers\g-noteServer\apps\g-note.war.xml.
+[11/03/2024 18:30:56:814 WET] 00000031 com.ibm.ws.jca.cm.ConnectorService                           I J2CA8050I: Utilisez un alias d'authentification au lieu de définir un nom d'utilisateur et un mot de passe sur dataSource[default-0].
+[11/03/2024 18:30:57:336 WET] 00000031 com.ibm.ws.recoverylog.spi.RecoveryDirectorImpl              I CWRLS0010I: Exécution de la procédure de reprise pour le serveur WebSphere local (g-noteServer).
+[11/03/2024 18:30:57:661 WET] 00000031 com.ibm.ws.recoverylog.spi.RecoveryDirectorImpl              I CWRLS0012I: Le système a demandé à tous les services persistants d'exécuter la procédure de reprise pour ce serveur WebSphere (g-noteServer).
+[11/03/2024 18:30:57:662 WET] 0000005e com.ibm.tx.jta.impl.RecoveryManager                          I WTRN0135I: Le service de transaction ne reprend pas de transactions.
+[11/03/2024 18:30:58:813 WET] 00000031 eclipselink                                                  I CWWJP9990I: [eclipselink] EclipseLink, version : Eclipse Persistence Services - 4.0.2.v202306161219.
+[11/03/2024 18:31:00:759 WET] 00000031 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8203I: Nom de la base de données : MySQL
+[11/03/2024 18:31:00:763 WET] 00000031 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8204I: Version de la base de données : 5.5.5-10.4.27-MariaDB
+[11/03/2024 18:31:00:764 WET] 00000031 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8205I: Nom du pilote JDBC : MySQL Connector/J
+[11/03/2024 18:31:00:764 WET] 00000031 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8206I: Version du pilote JDBC : mysql-connector-j-8.3.0 (Revision: 805f872a57875f311cb82487efcfb070411a3fa0)
+[11/03/2024 18:31:01:750 WET] 00000031 org.jboss.weld.Version                                       I WELD-000900: 5.1.1 (SP1)
+[11/03/2024 18:31:07:765 WET] 00000031 org.jboss.weld.Event                                         I WELD-000411: Observer method [BackedAnnotatedMethod] org.apache.myfaces.config.annotation.CdiAnnotationProviderExtension.processAnnotatedType(@Observes ProcessAnnotatedType<T>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+[11/03/2024 18:31:07:998 WET] 00000031 org.hibernate.validator.internal.util.Version                I HV000001: Hibernate Validator 7.0.4.Final
+[11/03/2024 18:31:11:161 WET] 00000031 com.ibm.ws.session.WASSessionCore                            I SESN8501I: Le gestionnaire de sessions n'a pas trouvé d'emplacement de stockage de persistance. Les objets HttpSession seront enregistrés dans la mémoire du serveur d'applications local.
+[11/03/2024 18:31:11:195 WET] 00000031 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Chargement du module Web : g-note.
+[11/03/2024 18:31:11:203 WET] 00000031 com.ibm.ws.webcontainer                                      I SRVE0250I: Module Web g-note lié à default_host.
+[11/03/2024 18:31:11:207 WET] 00000031 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Application Web disponible, (default_host) : http://localhost:9080/g-note/
+[11/03/2024 18:31:11:373 WET] 00000035 com.ibm.ws.session.WASSessionCore                            I SESN0176I: Un nouveau contexte de session sera créé pour la clé d'application default_host/g-note
+[11/03/2024 18:31:11:405 WET] 00000035 com.ibm.ws.util                                              I SESN0172I: Le gestionnaire de session utilise l'implémentation Java par défaut de SecureRandom pour la génération des ID de session.
+[11/03/2024 18:31:11:846 WET] 00000032 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: Un fichier de configuration pour un plug-in de serveur Web a été automatiquement généré pour ce serveur à C:\Users\user\Desktop\EST GI\g-note\target\liberty\wlp\usr\servers\g-noteServer\logs\state\plugin-cfg.xml.
+[11/03/2024 18:31:11:963 WET] 00000035 com.ibm.ws.cache.CacheServiceImpl                            I DYNA1056I: Dynamic Cache (cache des objets) a pu s'initialiser.
+[11/03/2024 18:31:12:195 WET] 00000035 org.apache.myfaces.webapp.MyFacesContainerInitializer        I Using io.openliberty.faces40.internal.ee.WASMyFacesContainerInitializer
+[11/03/2024 18:31:12:217 WET] 00000035 org.apache.myfaces.webapp.MyFacesContainerInitializer        I Added FacesServlet with mappings=[/faces/*, *.jsf, *.faces, *.xhtml]
+[11/03/2024 18:31:12:218 WET] 00000035 enliberty.faces40.internal.ee.WASMyFacesContainerInitializer I Added StartupServletContextListener to the servlet context
+[11/03/2024 18:31:12:627 WET] 00000035 org.apache.myfaces.config.DefaultFacesConfigurationProvider  I Found jakarta.faces.application.ApplicationFactory factory implementation: io.openliberty.faces40.internal.config.WASApplicationFactoryImpl
+[11/03/2024 18:31:13:124 WET] 00000035 org.apache.myfaces.util.ExternalSpecifications               I MyFaces Core CDI support enabled
+[11/03/2024 18:31:13:134 WET] 00000035 org.apache.myfaces.util.ExternalSpecifications               I MyFaces Core Bean Validation support enabled
+[11/03/2024 18:31:13:342 WET] 00000035 org.apache.myfaces.application.ApplicationImpl               I Couldn't discover the current project stage, using Production
+[11/03/2024 18:31:13:399 WET] 00000035 org.apache.myfaces.webapp.FacesInitializerImpl               I MyFaces Core has started, it took [1110] ms.
+[11/03/2024 18:31:13:407 WET] 00000035 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0001I: Application g-note démarrée en 20,871 secondes.
+[11/03/2024 18:31:13:556 WET] 0000002f com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: Le canal TCP defaultHttpEndpoint a été démarré et écoute à présent les demandes parvenant à l'hôte localhost127.0.0.1  (IPv4: 127.0.0.1), sur le port 9080.
+[11/03/2024 18:31:13:563 WET] 0000002f com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: Le canal TCP wasJmsEndpoint482 a été démarré et écoute à présent les demandes parvenant à l'hôte localhost127.0.0.1  (IPv4: 127.0.0.1), sur le port 7276.
+[11/03/2024 18:31:13:564 WET] 0000002f com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: Le canal TCP defaultHttpEndpoint-ssl a été démarré et écoute à présent les demandes parvenant à l'hôte localhost127.0.0.1  (IPv4: 127.0.0.1), sur le port 9443.
+[11/03/2024 18:31:13:565 WET] 0000002f com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: Le canal TCP wasJmsEndpoint482-ssl a été démarré et écoute à présent les demandes parvenant à l'hôte localhost127.0.0.1  (IPv4: 127.0.0.1), sur le port 7286.
+[11/03/2024 18:31:13:695 WET] 0000002f com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0012I: Le serveur a installé les fonctions suivantes : [appAuthentication-3.0, appAuthorization-2.1, appClientSupport-2.0, appSecurity-5.0, batch-2.1, beanValidation-3.0, cdi-4.0, concurrent-3.0, connectors-2.1, distributedMap-1.0, enterpriseBeans-4.0, enterpriseBeansHome-4.0, enterpriseBeansLite-4.0, enterpriseBeansPersistentTimer-4.0, enterpriseBeansRemote-4.0, expressionLanguage-5.0, faces-4.0, jakartaee-10.0, jdbc-4.2, jndi-1.0, jsonb-3.0, jsonp-2.1, mail-2.1, managedBeans-2.0, mdb-4.0, messaging-3.1, messagingClient-3.0, messagingSecurity-3.0, messagingServer-3.0, pages-3.1, persistence-3.1, persistenceContainer-3.1, restfulWS-3.1, restfulWSClient-3.1, servlet-6.0, ssl-1.0, transportSecurity-1.0, webProfile-10.0, websocket-2.1, xmlBinding-4.0, xmlWS-4.0].
+[11/03/2024 18:31:13:697 WET] 0000002f com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0008I: Mise à jour de fonction terminée en 41,983 secondes.
+[11/03/2024 18:31:13:697 WET] 0000002f com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0011I: Le serveur g-noteServer est prêt pour une planète plus intelligente. Il a démarré en 75,450 secondes.
+[11/03/2024 18:31:14:950 WET] 00000035 org.jboss.resteasy.resteasy_jaxrs.i18n                       I RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class estm.dsic.jee.rest.RestApplication$Proxy$_$$_WeldClientProxy
+[11/03/2024 18:31:15:175 WET] 00000035 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [g-note] [/g-note] [estm.dsic.jee.rest.RestApplication]: L'initialisation a abouti.
+[11/03/2024 19:02:24:233 WET] 00000083 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Application Web supprimée (default_host) : http://localhost:9080/g-note/
+[11/03/2024 19:02:24:699 WET] 00000083 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [g-note] [/g-note] [estm.dsic.jee.rest.RestApplication] : La suppression a abouti.
+[11/03/2024 19:02:27:210 WET] 00000083 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: L'application g-note s'est arrêtée correctement.
+[11/03/2024 19:02:27:507 WET] 00000083 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Démarrage de l'application g-note.
+[11/03/2024 19:02:27:526 WET] 00000083 bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: L'application g-note utilise la définition d'application souple à l'emplacement C:\Users\user\Desktop\EST GI\g-note\target\liberty\wlp\usr\servers\g-noteServer\apps\g-note.war.xml.
+[11/03/2024 19:02:30:418 WET] 00000082 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: Un fichier de configuration pour un plug-in de serveur Web a été automatiquement généré pour ce serveur à C:\Users\user\Desktop\EST GI\g-note\target\liberty\wlp\usr\servers\g-noteServer\logs\state\plugin-cfg.xml.
+[11/03/2024 19:02:33:875 WET] 00000083 eclipselink                                                  I CWWJP9990I: [eclipselink] EclipseLink, version : Eclipse Persistence Services - 4.0.2.v202306161219.
+[11/03/2024 19:02:40:988 WET] 00000083 org.jboss.weld.Event                                         I WELD-000411: Observer method [BackedAnnotatedMethod] org.apache.myfaces.config.annotation.CdiAnnotationProviderExtension.processAnnotatedType(@Observes ProcessAnnotatedType<T>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+[11/03/2024 19:02:42:485 WET] 00000083 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Chargement du module Web : g-note.
+[11/03/2024 19:02:42:486 WET] 00000083 com.ibm.ws.webcontainer                                      I SRVE0250I: Module Web g-note lié à default_host.
+[11/03/2024 19:02:42:486 WET] 00000083 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Application Web disponible, (default_host) : http://localhost:9080/g-note/
+[11/03/2024 19:02:42:490 WET] 00000085 com.ibm.ws.session.WASSessionCore                            I SESN0176I: Un nouveau contexte de session sera créé pour la clé d'application default_host/g-note
+[11/03/2024 19:02:42:491 WET] 00000085 com.ibm.ws.util                                              I SESN0172I: Le gestionnaire de session utilise l'implémentation Java par défaut de SecureRandom pour la génération des ID de session.
+[11/03/2024 19:02:42:559 WET] 00000082 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: Un fichier de configuration pour un plug-in de serveur Web a été automatiquement généré pour ce serveur à C:\Users\user\Desktop\EST GI\g-note\target\liberty\wlp\usr\servers\g-noteServer\logs\state\plugin-cfg.xml.
+[11/03/2024 19:02:43:262 WET] 00000085 org.apache.myfaces.webapp.MyFacesContainerInitializer        I Using io.openliberty.faces40.internal.ee.WASMyFacesContainerInitializer
+[11/03/2024 19:02:43:263 WET] 00000085 org.apache.myfaces.webapp.MyFacesContainerInitializer        I Added FacesServlet with mappings=[/faces/*, *.jsf, *.faces, *.xhtml]
+[11/03/2024 19:02:43:264 WET] 00000085 enliberty.faces40.internal.ee.WASMyFacesContainerInitializer I Added StartupServletContextListener to the servlet context
+[11/03/2024 19:02:43:361 WET] 00000085 org.apache.myfaces.config.DefaultFacesConfigurationProvider  I Found jakarta.faces.application.ApplicationFactory factory implementation: io.openliberty.faces40.internal.config.WASApplicationFactoryImpl
+[11/03/2024 19:02:43:821 WET] 00000085 org.apache.myfaces.application.ApplicationImpl               I Couldn't discover the current project stage, using Production
+[11/03/2024 19:02:43:837 WET] 00000085 org.apache.myfaces.webapp.FacesInitializerImpl               I MyFaces Core has started, it took [566] ms.
+[11/03/2024 19:02:43:845 WET] 00000085 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: Application g-note mise à jour en 16,337 secondes.
+[11/03/2024 19:02:44:073 WET] 00000085 org.jboss.resteasy.resteasy_jaxrs.i18n                       I RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class estm.dsic.jee.rest.RestApplication$Proxy$_$$_WeldClientProxy
+[11/03/2024 19:02:44:093 WET] 00000085 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [g-note] [/g-note] [estm.dsic.jee.rest.RestApplication]: L'initialisation a abouti.
+[11/03/2024 19:04:15:436 WET] 0000007f com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Application Web supprimée (default_host) : http://localhost:9080/g-note/
+[11/03/2024 19:04:15:574 WET] 0000007f com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [g-note] [/g-note] [estm.dsic.jee.rest.RestApplication] : La suppression a abouti.
+[11/03/2024 19:04:16:180 WET] 0000007f com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: L'application g-note s'est arrêtée correctement.
+[11/03/2024 19:04:16:294 WET] 0000007f com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Démarrage de l'application g-note.
+[11/03/2024 19:04:16:296 WET] 0000007f bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: L'application g-note utilise la définition d'application souple à l'emplacement C:\Users\user\Desktop\EST GI\g-note\target\liberty\wlp\usr\servers\g-noteServer\apps\g-note.war.xml.
+[11/03/2024 19:04:16:710 WET] 00000083 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: Un fichier de configuration pour un plug-in de serveur Web a été automatiquement généré pour ce serveur à C:\Users\user\Desktop\EST GI\g-note\target\liberty\wlp\usr\servers\g-noteServer\logs\state\plugin-cfg.xml.
+[11/03/2024 19:04:20:428 WET] 0000007f eclipselink                                                  I CWWJP9990I: [eclipselink] EclipseLink, version : Eclipse Persistence Services - 4.0.2.v202306161219.
+[11/03/2024 19:04:24:344 WET] 0000007f org.jboss.weld.Event                                         I WELD-000411: Observer method [BackedAnnotatedMethod] org.apache.myfaces.config.annotation.CdiAnnotationProviderExtension.processAnnotatedType(@Observes ProcessAnnotatedType<T>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+[11/03/2024 19:04:27:541 WET] 0000007f com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Chargement du module Web : g-note.
+[11/03/2024 19:04:27:542 WET] 0000007f com.ibm.ws.webcontainer                                      I SRVE0250I: Module Web g-note lié à default_host.
+[11/03/2024 19:04:27:542 WET] 0000007f com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Application Web disponible, (default_host) : http://localhost:9080/g-note/
+[11/03/2024 19:04:27:545 WET] 00000034 com.ibm.ws.session.WASSessionCore                            I SESN0176I: Un nouveau contexte de session sera créé pour la clé d'application default_host/g-note
+[11/03/2024 19:04:27:545 WET] 00000034 com.ibm.ws.util                                              I SESN0172I: Le gestionnaire de session utilise l'implémentation Java par défaut de SecureRandom pour la génération des ID de session.
+[11/03/2024 19:04:27:783 WET] 00000085 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: Un fichier de configuration pour un plug-in de serveur Web a été automatiquement généré pour ce serveur à C:\Users\user\Desktop\EST GI\g-note\target\liberty\wlp\usr\servers\g-noteServer\logs\state\plugin-cfg.xml.
+[11/03/2024 19:04:29:328 WET] 00000034 org.apache.myfaces.webapp.MyFacesContainerInitializer        I Using io.openliberty.faces40.internal.ee.WASMyFacesContainerInitializer
+[11/03/2024 19:04:29:330 WET] 00000034 org.apache.myfaces.webapp.MyFacesContainerInitializer        I Added FacesServlet with mappings=[/faces/*, *.jsf, *.faces, *.xhtml]
+[11/03/2024 19:04:29:336 WET] 00000034 enliberty.faces40.internal.ee.WASMyFacesContainerInitializer I Added StartupServletContextListener to the servlet context
+[11/03/2024 19:04:29:552 WET] 00000034 org.apache.myfaces.config.DefaultFacesConfigurationProvider  I Found jakarta.faces.application.ApplicationFactory factory implementation: io.openliberty.faces40.internal.config.WASApplicationFactoryImpl
+[11/03/2024 19:04:30:379 WET] 00000034 org.apache.myfaces.application.ApplicationImpl               I Couldn't discover the current project stage, using Production
+[11/03/2024 19:04:30:401 WET] 00000034 org.apache.myfaces.webapp.FacesInitializerImpl               I MyFaces Core has started, it took [959] ms.
+[11/03/2024 19:04:30:430 WET] 00000034 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: Application g-note mise à jour en 14,135 secondes.
+[11/03/2024 19:04:30:923 WET] 00000034 org.jboss.resteasy.resteasy_jaxrs.i18n                       I RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class estm.dsic.jee.rest.RestApplication$Proxy$_$$_WeldClientProxy
+[11/03/2024 19:04:30:978 WET] 00000034 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [g-note] [/g-note] [estm.dsic.jee.rest.RestApplication]: L'initialisation a abouti.
+[11/03/2024 19:07:20:555 WET] 00000078 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Application Web supprimée (default_host) : http://localhost:9080/g-note/
+[11/03/2024 19:07:20:709 WET] 00000078 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [g-note] [/g-note] [estm.dsic.jee.rest.RestApplication] : La suppression a abouti.
+[11/03/2024 19:07:21:263 WET] 00000078 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: L'application g-note s'est arrêtée correctement.
+[11/03/2024 19:07:21:379 WET] 00000078 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Démarrage de l'application g-note.
+[11/03/2024 19:07:21:395 WET] 00000078 bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: L'application g-note utilise la définition d'application souple à l'emplacement C:\Users\user\Desktop\EST GI\g-note\target\liberty\wlp\usr\servers\g-noteServer\apps\g-note.war.xml.
+[11/03/2024 19:07:21:993 WET] 0000007f com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: Un fichier de configuration pour un plug-in de serveur Web a été automatiquement généré pour ce serveur à C:\Users\user\Desktop\EST GI\g-note\target\liberty\wlp\usr\servers\g-noteServer\logs\state\plugin-cfg.xml.
+[11/03/2024 19:07:24:380 WET] 00000078 eclipselink                                                  I CWWJP9990I: [eclipselink] EclipseLink, version : Eclipse Persistence Services - 4.0.2.v202306161219.
+[11/03/2024 19:07:27:725 WET] 00000078 org.jboss.weld.Event                                         I WELD-000411: Observer method [BackedAnnotatedMethod] org.apache.myfaces.config.annotation.CdiAnnotationProviderExtension.processAnnotatedType(@Observes ProcessAnnotatedType<T>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+[11/03/2024 19:07:29:583 WET] 00000078 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Chargement du module Web : g-note.
+[11/03/2024 19:07:29:584 WET] 00000078 com.ibm.ws.webcontainer                                      I SRVE0250I: Module Web g-note lié à default_host.
+[11/03/2024 19:07:29:584 WET] 00000078 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Application Web disponible, (default_host) : http://localhost:9080/g-note/
+[11/03/2024 19:07:29:587 WET] 00000097 com.ibm.ws.session.WASSessionCore                            I SESN0176I: Un nouveau contexte de session sera créé pour la clé d'application default_host/g-note
+[11/03/2024 19:07:29:587 WET] 00000097 com.ibm.ws.util                                              I SESN0172I: Le gestionnaire de session utilise l'implémentation Java par défaut de SecureRandom pour la génération des ID de session.
+[11/03/2024 19:07:29:926 WET] 00000078 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: Un fichier de configuration pour un plug-in de serveur Web a été automatiquement généré pour ce serveur à C:\Users\user\Desktop\EST GI\g-note\target\liberty\wlp\usr\servers\g-noteServer\logs\state\plugin-cfg.xml.
+[11/03/2024 19:07:30:117 WET] 00000097 org.apache.myfaces.webapp.MyFacesContainerInitializer        I Using io.openliberty.faces40.internal.ee.WASMyFacesContainerInitializer
+[11/03/2024 19:07:30:120 WET] 00000097 org.apache.myfaces.webapp.MyFacesContainerInitializer        I Added FacesServlet with mappings=[/faces/*, *.jsf, *.faces, *.xhtml]
+[11/03/2024 19:07:30:120 WET] 00000097 enliberty.faces40.internal.ee.WASMyFacesContainerInitializer I Added StartupServletContextListener to the servlet context
+[11/03/2024 19:07:30:188 WET] 00000097 org.apache.myfaces.config.DefaultFacesConfigurationProvider  I Found jakarta.faces.application.ApplicationFactory factory implementation: io.openliberty.faces40.internal.config.WASApplicationFactoryImpl
+[11/03/2024 19:07:30:567 WET] 00000097 org.apache.myfaces.application.ApplicationImpl               I Couldn't discover the current project stage, using Production
+[11/03/2024 19:07:30:577 WET] 00000097 org.apache.myfaces.webapp.FacesInitializerImpl               I MyFaces Core has started, it took [454] ms.
+[11/03/2024 19:07:30:579 WET] 00000097 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: Application g-note mise à jour en 9,187 secondes.
+[11/03/2024 19:07:30:730 WET] 00000097 org.jboss.resteasy.resteasy_jaxrs.i18n                       I RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class estm.dsic.jee.rest.RestApplication$Proxy$_$$_WeldClientProxy
+[11/03/2024 19:07:30:764 WET] 00000097 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [g-note] [/g-note] [estm.dsic.jee.rest.RestApplication]: L'initialisation a abouti.
+[11/03/2024 19:13:13:825 WET] 000000a3 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Application Web supprimée (default_host) : http://localhost:9080/g-note/
+[11/03/2024 19:13:14:295 WET] 000000a3 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [g-note] [/g-note] [estm.dsic.jee.rest.RestApplication] : La suppression a abouti.
+[11/03/2024 19:13:15:409 WET] 000000a3 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: L'application g-note s'est arrêtée correctement.
+[11/03/2024 19:13:15:740 WET] 000000a3 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Démarrage de l'application g-note.
+[11/03/2024 19:13:15:784 WET] 000000a3 bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: L'application g-note utilise la définition d'application souple à l'emplacement C:\Users\user\Desktop\EST GI\g-note\target\liberty\wlp\usr\servers\g-noteServer\apps\g-note.war.xml.
+[11/03/2024 19:13:16:758 WET] 00000078 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: Un fichier de configuration pour un plug-in de serveur Web a été automatiquement généré pour ce serveur à C:\Users\user\Desktop\EST GI\g-note\target\liberty\wlp\usr\servers\g-noteServer\logs\state\plugin-cfg.xml.
+[11/03/2024 19:13:19:201 WET] 000000a3 eclipselink                                                  I CWWJP9990I: [eclipselink] EclipseLink, version : Eclipse Persistence Services - 4.0.2.v202306161219.
+[11/03/2024 19:13:23:220 WET] 000000a3 org.jboss.weld.Event                                         I WELD-000411: Observer method [BackedAnnotatedMethod] org.apache.myfaces.config.annotation.CdiAnnotationProviderExtension.processAnnotatedType(@Observes ProcessAnnotatedType<T>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+[11/03/2024 19:13:25:046 WET] 000000a3 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Chargement du module Web : g-note.
+[11/03/2024 19:13:25:047 WET] 000000a3 com.ibm.ws.webcontainer                                      I SRVE0250I: Module Web g-note lié à default_host.
+[11/03/2024 19:13:25:049 WET] 000000a3 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Application Web disponible, (default_host) : http://localhost:9080/g-note/
+[11/03/2024 19:13:25:062 WET] 0000007e com.ibm.ws.session.WASSessionCore                            I SESN0176I: Un nouveau contexte de session sera créé pour la clé d'application default_host/g-note
+[11/03/2024 19:13:25:075 WET] 0000007e com.ibm.ws.util                                              I SESN0172I: Le gestionnaire de session utilise l'implémentation Java par défaut de SecureRandom pour la génération des ID de session.
+[11/03/2024 19:13:25:105 WET] 000000a3 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: Un fichier de configuration pour un plug-in de serveur Web a été automatiquement généré pour ce serveur à C:\Users\user\Desktop\EST GI\g-note\target\liberty\wlp\usr\servers\g-noteServer\logs\state\plugin-cfg.xml.
+[11/03/2024 19:13:25:432 WET] 0000007e org.apache.myfaces.webapp.MyFacesContainerInitializer        I Using io.openliberty.faces40.internal.ee.WASMyFacesContainerInitializer
+[11/03/2024 19:13:25:438 WET] 0000007e org.apache.myfaces.webapp.MyFacesContainerInitializer        I Added FacesServlet with mappings=[/faces/*, *.jsf, *.faces, *.xhtml]
+[11/03/2024 19:13:25:439 WET] 0000007e enliberty.faces40.internal.ee.WASMyFacesContainerInitializer I Added StartupServletContextListener to the servlet context
+[11/03/2024 19:13:25:498 WET] 0000007e org.apache.myfaces.config.DefaultFacesConfigurationProvider  I Found jakarta.faces.application.ApplicationFactory factory implementation: io.openliberty.faces40.internal.config.WASApplicationFactoryImpl
+[11/03/2024 19:13:25:942 WET] 0000007e org.apache.myfaces.application.ApplicationImpl               I Couldn't discover the current project stage, using Production
+[11/03/2024 19:13:25:967 WET] 0000007e org.apache.myfaces.webapp.FacesInitializerImpl               I MyFaces Core has started, it took [518] ms.
+[11/03/2024 19:13:25:974 WET] 0000007e com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: Application g-note mise à jour en 10,235 secondes.
+[11/03/2024 19:13:26:249 WET] 0000007e org.jboss.resteasy.resteasy_jaxrs.i18n                       I RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class estm.dsic.jee.rest.RestApplication$Proxy$_$$_WeldClientProxy
+[11/03/2024 19:13:26:402 WET] 0000007e com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [g-note] [/g-note] [estm.dsic.jee.rest.RestApplication]: L'initialisation a abouti.
+[11/03/2024 19:35:28:822 WET] 000000b0 org.eclipse.yasson.internal.SerializationContextImpl         E Generating incomplete JSON
+[11/03/2024 19:35:29:043 WET] 000000b0 g.jboss.resteasy.core.providerfactory.DefaultExceptionMapper E RESTEASY002375: Error processing request POST /g-note/api/gnotes/v1/users/find - estm.dsic.jee.rest.controllers.UserController.findUser
+jakarta.json.bind.JsonbException: Impossible de sérialiser la propriété 'notes' à partir de estm.dsic.jee.rest.models.User
+	at org.eclipse.yasson.internal.serializer.ObjectSerializer.lambda$serialize$0(ObjectSerializer.java:43)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:986)
+	at org.eclipse.yasson.internal.serializer.ObjectSerializer.serialize(ObjectSerializer.java:38)
+	at org.eclipse.yasson.internal.serializer.RecursionChecker.serialize(RecursionChecker.java:38)
+	at org.eclipse.yasson.internal.serializer.KeyWriter.serialize(KeyWriter.java:41)
+	at org.eclipse.yasson.internal.serializer.NullVisibilitySwitcher.serialize(NullVisibilitySwitcher.java:40)
+	at org.eclipse.yasson.internal.serializer.NullSerializer.serialize(NullSerializer.java:67)
+	at org.eclipse.yasson.internal.SerializationContextImpl.serializeObject(SerializationContextImpl.java:197)
+	at org.eclipse.yasson.internal.SerializationContextImpl.marshall(SerializationContextImpl.java:133)
+	at org.eclipse.yasson.internal.SerializationContextImpl.marshall(SerializationContextImpl.java:159)
+	at org.eclipse.yasson.internal.JsonBinding.toJson(JsonBinding.java:131)
+	at io.openliberty.restfulWS30.jsonb20provider.JsonBProvider.writeTo(JsonBProvider.java:224)
+	at org.jboss.resteasy.core.interception.jaxrs.ServerWriterInterceptorContext.lambda$writeTo$1(ServerWriterInterceptorContext.java:79)
+	at org.jboss.resteasy.plugins.server.servlet.Servlet3AsyncHttpRequest$Servlet3ExecutionContext.executeBlockingIo(Servlet3AsyncHttpRequest.java:397)
+	at org.jboss.resteasy.core.interception.jaxrs.ServerWriterInterceptorContext.writeTo(ServerWriterInterceptorContext.java:79)
+	at org.jboss.resteasy.core.interception.jaxrs.AbstractWriterInterceptorContext.syncProceed(AbstractWriterInterceptorContext.java:245)
+	at org.jboss.resteasy.core.interception.jaxrs.AbstractWriterInterceptorContext.getStarted(AbstractWriterInterceptorContext.java:170)
+	at org.jboss.resteasy.core.interception.jaxrs.ServerWriterInterceptorContext.lambda$getStarted$0(ServerWriterInterceptorContext.java:73)
+	at org.jboss.resteasy.core.interception.jaxrs.ServerWriterInterceptorContext.aroundWriteTo(ServerWriterInterceptorContext.java:93)
+	at org.jboss.resteasy.core.interception.jaxrs.ServerWriterInterceptorContext.getStarted(ServerWriterInterceptorContext.java:73)
+	at org.jboss.resteasy.core.ServerResponseWriter.lambda$writeNomapResponse$3(ServerResponseWriter.java:203)
+	at org.jboss.resteasy.core.interception.jaxrs.ContainerResponseContextImpl.filter(ContainerResponseContextImpl.java:465)
+	at org.jboss.resteasy.core.ServerResponseWriter.executeFilters(ServerResponseWriter.java:297)
+	at org.jboss.resteasy.core.ServerResponseWriter.writeNomapResponse(ServerResponseWriter.java:132)
+	at org.jboss.resteasy.core.ServerResponseWriter.writeNomapResponse(ServerResponseWriter.java:105)
+	at org.jboss.resteasy.core.SynchronousDispatcher.writeResponse(SynchronousDispatcher.java:594)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:524)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$invoke$4(SynchronousDispatcher.java:261)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$preprocess$0(SynchronousDispatcher.java:161)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:434)
+	at org.jboss.resteasy.core.SynchronousDispatcher.preprocess(SynchronousDispatcher.java:164)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:247)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:255)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:60)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:614)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1260)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:748)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:445)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.invokeTarget(WebAppFilterChain.java:197)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:100)
+	at com.ibm.ws.security.jaspi.JaspiServletFilter.doFilter(JaspiServletFilter.java:58)
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:203)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:93)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.doFilter(WebAppFilterManager.java:1068)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1259)
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleRequest(WebApp.java:5076)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.handleRequest(DynamicVirtualHost.java:328)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:1038)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:293)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1260)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:476)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:435)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:569)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:503)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:363)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.ready(HttpInboundLink.java:330)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.sendToDiscriminators(NewConnectionInitialReadCallback.java:169)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.complete(NewConnectionInitialReadCallback.java:77)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:516)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:586)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:970)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1059)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:280)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+	Suppressed: jakarta.json.stream.JsonGenerationException: Generating incomplete JSON
+		at org.eclipse.parsson.JsonGeneratorImpl.close(JsonGeneratorImpl.java:521)
+		at org.eclipse.yasson.internal.JsonBinding.toJson(JsonBinding.java:130)
+		... 56 more
+Caused by: jakarta.json.bind.JsonbException: Impossible de sérialiser la propriété 'user' à partir de estm.dsic.jee.rest.models.Note
+	at org.eclipse.yasson.internal.serializer.ObjectSerializer.lambda$serialize$0(ObjectSerializer.java:43)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:986)
+	at org.eclipse.yasson.internal.serializer.ObjectSerializer.serialize(ObjectSerializer.java:38)
+	at org.eclipse.yasson.internal.serializer.RecursionChecker.serialize(RecursionChecker.java:38)
+	at org.eclipse.yasson.internal.serializer.KeyWriter.serialize(KeyWriter.java:41)
+	at org.eclipse.yasson.internal.serializer.NullVisibilitySwitcher.serialize(NullVisibilitySwitcher.java:40)
+	at org.eclipse.yasson.internal.serializer.NullSerializer.serialize(NullSerializer.java:67)
+	at org.eclipse.yasson.internal.serializer.types.ObjectTypeSerializer.findSerializer(ObjectTypeSerializer.java:68)
+	at org.eclipse.yasson.internal.serializer.types.ObjectTypeSerializer.serializeValue(ObjectTypeSerializer.java:50)
+	at org.eclipse.yasson.internal.serializer.types.TypeSerializer$ValueSerializer.serialize(TypeSerializer.java:51)
+	at org.eclipse.yasson.internal.serializer.types.TypeSerializer.serialize(TypeSerializer.java:37)
+	at org.eclipse.yasson.internal.serializer.types.ObjectTypeSerializer.serialize(ObjectTypeSerializer.java:31)
+	at org.eclipse.yasson.internal.serializer.NullSerializer.serialize(NullSerializer.java:67)
+	at org.eclipse.yasson.internal.serializer.CollectionSerializer.lambda$serialize$0(CollectionSerializer.java:37)
+	at java.base/java.util.Vector.forEach(Vector.java:1359)
+	at org.eclipse.persistence.indirection.IndirectList.forEach(IndirectList.java:911)
+	at org.eclipse.yasson.internal.serializer.CollectionSerializer.serialize(CollectionSerializer.java:37)
+	at org.eclipse.yasson.internal.serializer.KeyWriter.serialize(KeyWriter.java:41)
+	at org.eclipse.yasson.internal.serializer.NullVisibilitySwitcher.serialize(NullVisibilitySwitcher.java:40)
+	at org.eclipse.yasson.internal.serializer.NullSerializer.serialize(NullSerializer.java:67)
+	at org.eclipse.yasson.internal.serializer.ValueGetterSerializer.serialize(ValueGetterSerializer.java:43)
+	at org.eclipse.yasson.internal.serializer.ObjectSerializer.lambda$serialize$0(ObjectSerializer.java:41)
+	... 66 more
+Caused by: jakarta.json.bind.JsonbException: Une référence récursive a été trouvée dans la classe class estm.dsic.jee.rest.models.User.
+	at org.eclipse.yasson.internal.serializer.RecursionChecker.serialize(RecursionChecker.java:36)
+	at org.eclipse.yasson.internal.serializer.KeyWriter.serialize(KeyWriter.java:41)
+	at org.eclipse.yasson.internal.serializer.NullVisibilitySwitcher.serialize(NullVisibilitySwitcher.java:40)
+	at org.eclipse.yasson.internal.serializer.NullSerializer.serialize(NullSerializer.java:67)
+	at org.eclipse.yasson.internal.serializer.CyclicReferenceSerializer.serialize(CyclicReferenceSerializer.java:39)
+	at org.eclipse.yasson.internal.serializer.types.ObjectTypeSerializer.findSerializer(ObjectTypeSerializer.java:68)
+	at org.eclipse.yasson.internal.serializer.types.ObjectTypeSerializer.serializeValue(ObjectTypeSerializer.java:50)
+	at org.eclipse.yasson.internal.serializer.types.TypeSerializer$ValueSerializer.serialize(TypeSerializer.java:51)
+	at org.eclipse.yasson.internal.serializer.types.TypeSerializer.serialize(TypeSerializer.java:37)
+	at org.eclipse.yasson.internal.serializer.types.ObjectTypeSerializer.serialize(ObjectTypeSerializer.java:31)
+	at org.eclipse.yasson.internal.serializer.NullSerializer.serialize(NullSerializer.java:67)
+	at org.eclipse.yasson.internal.serializer.ValueGetterSerializer.serialize(ValueGetterSerializer.java:43)
+	at org.eclipse.yasson.internal.serializer.ObjectSerializer.lambda$serialize$0(ObjectSerializer.java:41)
+	... 87 more
+
+[11/03/2024 19:44:28:898 WET] 00000084 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Application Web supprimée (default_host) : http://localhost:9080/g-note/
+[11/03/2024 19:44:29:245 WET] 00000084 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [g-note] [/g-note] [estm.dsic.jee.rest.RestApplication] : La suppression a abouti.
+[11/03/2024 19:44:30:800 WET] 00000084 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: L'application g-note s'est arrêtée correctement.
+[11/03/2024 19:44:31:004 WET] 00000084 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Démarrage de l'application g-note.
+[11/03/2024 19:44:31:010 WET] 00000084 bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: L'application g-note utilise la définition d'application souple à l'emplacement C:\Users\user\Desktop\EST GI\g-note\target\liberty\wlp\usr\servers\g-noteServer\apps\g-note.war.xml.
+[11/03/2024 19:44:32:422 WET] 000000b0 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: Un fichier de configuration pour un plug-in de serveur Web a été automatiquement généré pour ce serveur à C:\Users\user\Desktop\EST GI\g-note\target\liberty\wlp\usr\servers\g-noteServer\logs\state\plugin-cfg.xml.
+[11/03/2024 19:44:37:789 WET] 00000084 eclipselink                                                  I CWWJP9990I: [eclipselink] EclipseLink, version : Eclipse Persistence Services - 4.0.2.v202306161219.
+[11/03/2024 19:44:45:708 WET] 00000084 org.jboss.weld.Event                                         I WELD-000411: Observer method [BackedAnnotatedMethod] org.apache.myfaces.config.annotation.CdiAnnotationProviderExtension.processAnnotatedType(@Observes ProcessAnnotatedType<T>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+[11/03/2024 19:44:51:821 WET] 00000084 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Chargement du module Web : g-note.
+[11/03/2024 19:44:51:823 WET] 00000084 com.ibm.ws.webcontainer                                      I SRVE0250I: Module Web g-note lié à default_host.
+[11/03/2024 19:44:51:824 WET] 00000084 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Application Web disponible, (default_host) : http://localhost:9080/g-note/
+[11/03/2024 19:44:51:845 WET] 000000bb com.ibm.ws.session.WASSessionCore                            I SESN0176I: Un nouveau contexte de session sera créé pour la clé d'application default_host/g-note
+[11/03/2024 19:44:51:855 WET] 000000bb com.ibm.ws.util                                              I SESN0172I: Le gestionnaire de session utilise l'implémentation Java par défaut de SecureRandom pour la génération des ID de session.
+[11/03/2024 19:44:52:679 WET] 000000bb org.apache.myfaces.webapp.MyFacesContainerInitializer        I Using io.openliberty.faces40.internal.ee.WASMyFacesContainerInitializer
+[11/03/2024 19:44:52:690 WET] 000000bb org.apache.myfaces.webapp.MyFacesContainerInitializer        I Added FacesServlet with mappings=[/faces/*, *.jsf, *.faces, *.xhtml]
+[11/03/2024 19:44:52:691 WET] 000000bb enliberty.faces40.internal.ee.WASMyFacesContainerInitializer I Added StartupServletContextListener to the servlet context
+[11/03/2024 19:44:52:825 WET] 000000bb org.apache.myfaces.config.DefaultFacesConfigurationProvider  I Found jakarta.faces.application.ApplicationFactory factory implementation: io.openliberty.faces40.internal.config.WASApplicationFactoryImpl
+[11/03/2024 19:44:53:705 WET] 000000bb org.apache.myfaces.application.ApplicationImpl               I Couldn't discover the current project stage, using Production
+[11/03/2024 19:44:53:770 WET] 000000bb org.apache.myfaces.webapp.FacesInitializerImpl               I MyFaces Core has started, it took [1062] ms.
+[11/03/2024 19:44:53:778 WET] 000000bb com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: Application g-note mise à jour en 22,774 secondes.
+[11/03/2024 19:44:53:969 WET] 000000b0 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Application Web supprimée (default_host) : http://localhost:9080/g-note/
+[11/03/2024 19:44:54:251 WET] 000000bb org.jboss.resteasy.resteasy_jaxrs.i18n                       I RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class estm.dsic.jee.rest.RestApplication$Proxy$_$$_WeldClientProxy
+[11/03/2024 19:44:54:354 WET] 000000bb com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [g-note] [/g-note] [estm.dsic.jee.rest.RestApplication]: L'initialisation a abouti.
+[11/03/2024 19:44:54:363 WET] 000000b0 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [g-note] [/g-note] [estm.dsic.jee.rest.RestApplication] : La suppression a abouti.
+[11/03/2024 19:44:54:440 WET] 000000b0 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: L'application g-note s'est arrêtée correctement.
+[11/03/2024 19:44:54:482 WET] 000000b0 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Démarrage de l'application g-note.
+[11/03/2024 19:44:54:484 WET] 000000b0 bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: L'application g-note utilise la définition d'application souple à l'emplacement C:\Users\user\Desktop\EST GI\g-note\target\liberty\wlp\usr\servers\g-noteServer\apps\g-note.war.xml.
+[11/03/2024 19:44:56:469 WET] 000000b0 eclipselink                                                  I CWWJP9990I: [eclipselink] EclipseLink, version : Eclipse Persistence Services - 4.0.2.v202306161219.
+[11/03/2024 19:44:58:931 WET] 00000084 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: Un fichier de configuration pour un plug-in de serveur Web a été automatiquement généré pour ce serveur à C:\Users\user\Desktop\EST GI\g-note\target\liberty\wlp\usr\servers\g-noteServer\logs\state\plugin-cfg.xml.
+[11/03/2024 19:44:58:978 WET] 000000b9 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: Un fichier de configuration pour un plug-in de serveur Web a été automatiquement généré pour ce serveur à C:\Users\user\Desktop\EST GI\g-note\target\liberty\wlp\usr\servers\g-noteServer\logs\state\plugin-cfg.xml.
+[11/03/2024 19:44:59:050 WET] 000000b0 org.jboss.weld.Event                                         I WELD-000411: Observer method [BackedAnnotatedMethod] org.apache.myfaces.config.annotation.CdiAnnotationProviderExtension.processAnnotatedType(@Observes ProcessAnnotatedType<T>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+[11/03/2024 19:44:59:740 WET] 000000b0 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Chargement du module Web : g-note.
+[11/03/2024 19:44:59:740 WET] 000000b0 com.ibm.ws.webcontainer                                      I SRVE0250I: Module Web g-note lié à default_host.
+[11/03/2024 19:44:59:741 WET] 000000b0 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Application Web disponible, (default_host) : http://localhost:9080/g-note/
+[11/03/2024 19:44:59:745 WET] 00000084 com.ibm.ws.session.WASSessionCore                            I SESN0176I: Un nouveau contexte de session sera créé pour la clé d'application default_host/g-note
+[11/03/2024 19:44:59:745 WET] 00000084 com.ibm.ws.util                                              I SESN0172I: Le gestionnaire de session utilise l'implémentation Java par défaut de SecureRandom pour la génération des ID de session.
+[11/03/2024 19:44:59:790 WET] 000000b0 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: Un fichier de configuration pour un plug-in de serveur Web a été automatiquement généré pour ce serveur à C:\Users\user\Desktop\EST GI\g-note\target\liberty\wlp\usr\servers\g-noteServer\logs\state\plugin-cfg.xml.
+[11/03/2024 19:45:00:128 WET] 00000084 org.apache.myfaces.webapp.MyFacesContainerInitializer        I Using io.openliberty.faces40.internal.ee.WASMyFacesContainerInitializer
+[11/03/2024 19:45:00:129 WET] 00000084 org.apache.myfaces.webapp.MyFacesContainerInitializer        I Added FacesServlet with mappings=[/faces/*, *.jsf, *.faces, *.xhtml]
+[11/03/2024 19:45:00:129 WET] 00000084 enliberty.faces40.internal.ee.WASMyFacesContainerInitializer I Added StartupServletContextListener to the servlet context
+[11/03/2024 19:45:00:165 WET] 00000084 org.apache.myfaces.config.DefaultFacesConfigurationProvider  I Found jakarta.faces.application.ApplicationFactory factory implementation: io.openliberty.faces40.internal.config.WASApplicationFactoryImpl
+[11/03/2024 19:45:00:528 WET] 00000084 org.apache.myfaces.application.ApplicationImpl               I Couldn't discover the current project stage, using Production
+[11/03/2024 19:45:00:563 WET] 00000084 org.apache.myfaces.webapp.FacesInitializerImpl               I MyFaces Core has started, it took [431] ms.
+[11/03/2024 19:45:00:584 WET] 00000084 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: Application g-note mise à jour en 6,102 secondes.
+[11/03/2024 19:45:00:853 WET] 00000084 org.jboss.resteasy.resteasy_jaxrs.i18n                       I RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class estm.dsic.jee.rest.RestApplication$Proxy$_$$_WeldClientProxy
+[11/03/2024 19:45:00:904 WET] 00000084 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [g-note] [/g-note] [estm.dsic.jee.rest.RestApplication]: L'initialisation a abouti.
+[11/03/2024 19:45:24:209 WET] 000000bb com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Application Web supprimée (default_host) : http://localhost:9080/g-note/
+[11/03/2024 19:45:24:214 WET] 000000bb com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [g-note] [/g-note] [estm.dsic.jee.rest.RestApplication] : La suppression a abouti.
+[11/03/2024 19:45:24:326 WET] 000000bb com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: L'application g-note s'est arrêtée correctement.
+[11/03/2024 19:45:24:418 WET] 000000bb com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Démarrage de l'application g-note.
+[11/03/2024 19:45:24:419 WET] 000000bb bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: L'application g-note utilise la définition d'application souple à l'emplacement C:\Users\user\Desktop\EST GI\g-note\target\liberty\wlp\usr\servers\g-noteServer\apps\g-note.war.xml.
+[11/03/2024 19:45:24:538 WET] 000000b9 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: Un fichier de configuration pour un plug-in de serveur Web a été automatiquement généré pour ce serveur à C:\Users\user\Desktop\EST GI\g-note\target\liberty\wlp\usr\servers\g-noteServer\logs\state\plugin-cfg.xml.
+[11/03/2024 19:45:26:794 WET] 000000bb eclipselink                                                  I CWWJP9990I: [eclipselink] EclipseLink, version : Eclipse Persistence Services - 4.0.2.v202306161219.
+[11/03/2024 19:45:30:917 WET] 000000bb org.jboss.weld.Event                                         I WELD-000411: Observer method [BackedAnnotatedMethod] org.apache.myfaces.config.annotation.CdiAnnotationProviderExtension.processAnnotatedType(@Observes ProcessAnnotatedType<T>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+[11/03/2024 19:45:31:886 WET] 000000bb com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Chargement du module Web : g-note.
+[11/03/2024 19:45:31:886 WET] 000000bb com.ibm.ws.webcontainer                                      I SRVE0250I: Module Web g-note lié à default_host.
+[11/03/2024 19:45:31:886 WET] 000000bb com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Application Web disponible, (default_host) : http://localhost:9080/g-note/
+[11/03/2024 19:45:31:890 WET] 000000b9 com.ibm.ws.session.WASSessionCore                            I SESN0176I: Un nouveau contexte de session sera créé pour la clé d'application default_host/g-note
+[11/03/2024 19:45:31:890 WET] 000000b9 com.ibm.ws.util                                              I SESN0172I: Le gestionnaire de session utilise l'implémentation Java par défaut de SecureRandom pour la génération des ID de session.
+[11/03/2024 19:45:32:028 WET] 000000bb com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: Un fichier de configuration pour un plug-in de serveur Web a été automatiquement généré pour ce serveur à C:\Users\user\Desktop\EST GI\g-note\target\liberty\wlp\usr\servers\g-noteServer\logs\state\plugin-cfg.xml.
+[11/03/2024 19:45:32:621 WET] 000000b9 org.apache.myfaces.webapp.MyFacesContainerInitializer        I Using io.openliberty.faces40.internal.ee.WASMyFacesContainerInitializer
+[11/03/2024 19:45:32:622 WET] 000000b9 org.apache.myfaces.webapp.MyFacesContainerInitializer        I Added FacesServlet with mappings=[/faces/*, *.jsf, *.faces, *.xhtml]
+[11/03/2024 19:45:32:623 WET] 000000b9 enliberty.faces40.internal.ee.WASMyFacesContainerInitializer I Added StartupServletContextListener to the servlet context
+[11/03/2024 19:45:32:647 WET] 000000b9 org.apache.myfaces.config.DefaultFacesConfigurationProvider  I Found jakarta.faces.application.ApplicationFactory factory implementation: io.openliberty.faces40.internal.config.WASApplicationFactoryImpl
+[11/03/2024 19:45:32:973 WET] 000000b9 org.apache.myfaces.application.ApplicationImpl               I Couldn't discover the current project stage, using Production
+[11/03/2024 19:45:32:981 WET] 000000b9 org.apache.myfaces.webapp.FacesInitializerImpl               I MyFaces Core has started, it took [355] ms.
+[11/03/2024 19:45:32:987 WET] 000000b9 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: Application g-note mise à jour en 8,568 secondes.
+[11/03/2024 19:45:33:206 WET] 000000b9 org.jboss.resteasy.resteasy_jaxrs.i18n                       I RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class estm.dsic.jee.rest.RestApplication$Proxy$_$$_WeldClientProxy
+[11/03/2024 19:45:33:263 WET] 000000b9 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [g-note] [/g-note] [estm.dsic.jee.rest.RestApplication]: L'initialisation a abouti.
+[11/03/2024 19:55:40:824 WET] 000000dd com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Application Web supprimée (default_host) : http://localhost:9080/g-note/
+[11/03/2024 19:55:41:214 WET] 000000dd com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [g-note] [/g-note] [estm.dsic.jee.rest.RestApplication] : La suppression a abouti.
+[11/03/2024 19:55:42:506 WET] 000000dd com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: L'application g-note s'est arrêtée correctement.
+[11/03/2024 19:55:43:007 WET] 000000dd com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Démarrage de l'application g-note.
+[11/03/2024 19:55:43:018 WET] 000000dd bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: L'application g-note utilise la définition d'application souple à l'emplacement C:\Users\user\Desktop\EST GI\g-note\target\liberty\wlp\usr\servers\g-noteServer\apps\g-note.war.xml.
+[11/03/2024 19:55:44:408 WET] 000000d6 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: Un fichier de configuration pour un plug-in de serveur Web a été automatiquement généré pour ce serveur à C:\Users\user\Desktop\EST GI\g-note\target\liberty\wlp\usr\servers\g-noteServer\logs\state\plugin-cfg.xml.
+[11/03/2024 19:55:47:343 WET] 000000dd eclipselink                                                  I CWWJP9990I: [eclipselink] EclipseLink, version : Eclipse Persistence Services - 4.0.2.v202306161219.
+[11/03/2024 19:55:52:145 WET] 000000dd org.jboss.weld.Event                                         I WELD-000411: Observer method [BackedAnnotatedMethod] org.apache.myfaces.config.annotation.CdiAnnotationProviderExtension.processAnnotatedType(@Observes ProcessAnnotatedType<T>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+[11/03/2024 19:55:53:458 WET] 000000dd com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Chargement du module Web : g-note.
+[11/03/2024 19:55:53:460 WET] 000000dd com.ibm.ws.webcontainer                                      I SRVE0250I: Module Web g-note lié à default_host.
+[11/03/2024 19:55:53:462 WET] 000000dd com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Application Web disponible, (default_host) : http://localhost:9080/g-note/
+[11/03/2024 19:55:53:507 WET] 000000e5 com.ibm.ws.session.WASSessionCore                            I SESN0176I: Un nouveau contexte de session sera créé pour la clé d'application default_host/g-note
+[11/03/2024 19:55:53:524 WET] 000000d7 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: Un fichier de configuration pour un plug-in de serveur Web a été automatiquement généré pour ce serveur à C:\Users\user\Desktop\EST GI\g-note\target\liberty\wlp\usr\servers\g-noteServer\logs\state\plugin-cfg.xml.
+[11/03/2024 19:55:53:527 WET] 000000e5 com.ibm.ws.util                                              I SESN0172I: Le gestionnaire de session utilise l'implémentation Java par défaut de SecureRandom pour la génération des ID de session.
+[11/03/2024 19:55:54:089 WET] 000000e5 org.apache.myfaces.webapp.MyFacesContainerInitializer        I Using io.openliberty.faces40.internal.ee.WASMyFacesContainerInitializer
+[11/03/2024 19:55:54:112 WET] 000000e5 org.apache.myfaces.webapp.MyFacesContainerInitializer        I Added FacesServlet with mappings=[/faces/*, *.jsf, *.faces, *.xhtml]
+[11/03/2024 19:55:54:112 WET] 000000e5 enliberty.faces40.internal.ee.WASMyFacesContainerInitializer I Added StartupServletContextListener to the servlet context
+[11/03/2024 19:55:54:198 WET] 000000e5 org.apache.myfaces.config.DefaultFacesConfigurationProvider  I Found jakarta.faces.application.ApplicationFactory factory implementation: io.openliberty.faces40.internal.config.WASApplicationFactoryImpl
+[11/03/2024 19:55:54:735 WET] 000000e5 org.apache.myfaces.application.ApplicationImpl               I Couldn't discover the current project stage, using Production
+[11/03/2024 19:55:54:756 WET] 000000e5 org.apache.myfaces.webapp.FacesInitializerImpl               I MyFaces Core has started, it took [632] ms.
+[11/03/2024 19:55:54:769 WET] 000000e5 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: Application g-note mise à jour en 11,761 secondes.
+[11/03/2024 19:55:54:935 WET] 000000e5 org.jboss.resteasy.resteasy_jaxrs.i18n                       I RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class estm.dsic.jee.rest.RestApplication$Proxy$_$$_WeldClientProxy
+[11/03/2024 19:55:54:976 WET] 000000e5 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [g-note] [/g-note] [estm.dsic.jee.rest.RestApplication]: L'initialisation a abouti.
+[11/03/2024 20:00:39:217 WET] 000000d4 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Application Web supprimée (default_host) : http://localhost:9080/g-note/
+[11/03/2024 20:00:39:490 WET] 000000d4 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [g-note] [/g-note] [estm.dsic.jee.rest.RestApplication] : La suppression a abouti.
+[11/03/2024 20:00:41:118 WET] 000000d4 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: L'application g-note s'est arrêtée correctement.
+[11/03/2024 20:00:41:484 WET] 000000d4 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Démarrage de l'application g-note.
+[11/03/2024 20:00:41:491 WET] 000000d4 bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: L'application g-note utilise la définition d'application souple à l'emplacement C:\Users\user\Desktop\EST GI\g-note\target\liberty\wlp\usr\servers\g-noteServer\apps\g-note.war.xml.
+[11/03/2024 20:00:42:592 WET] 000000e2 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: Un fichier de configuration pour un plug-in de serveur Web a été automatiquement généré pour ce serveur à C:\Users\user\Desktop\EST GI\g-note\target\liberty\wlp\usr\servers\g-noteServer\logs\state\plugin-cfg.xml.
+[11/03/2024 20:00:46:039 WET] 000000d4 eclipselink                                                  I CWWJP9990I: [eclipselink] EclipseLink, version : Eclipse Persistence Services - 4.0.2.v202306161219.
+[11/03/2024 20:00:52:004 WET] 000000d4 org.jboss.weld.Event                                         I WELD-000411: Observer method [BackedAnnotatedMethod] org.apache.myfaces.config.annotation.CdiAnnotationProviderExtension.processAnnotatedType(@Observes ProcessAnnotatedType<T>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+[11/03/2024 20:00:53:522 WET] 000000d4 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Chargement du module Web : g-note.
+[11/03/2024 20:00:53:523 WET] 000000d4 com.ibm.ws.webcontainer                                      I SRVE0250I: Module Web g-note lié à default_host.
+[11/03/2024 20:00:53:527 WET] 000000d4 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Application Web disponible, (default_host) : http://localhost:9080/g-note/
+[11/03/2024 20:00:53:560 WET] 000000df com.ibm.ws.session.WASSessionCore                            I SESN0176I: Un nouveau contexte de session sera créé pour la clé d'application default_host/g-note
+[11/03/2024 20:00:53:573 WET] 000000df com.ibm.ws.util                                              I SESN0172I: Le gestionnaire de session utilise l'implémentation Java par défaut de SecureRandom pour la génération des ID de session.
+[11/03/2024 20:00:53:600 WET] 000000d4 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: Un fichier de configuration pour un plug-in de serveur Web a été automatiquement généré pour ce serveur à C:\Users\user\Desktop\EST GI\g-note\target\liberty\wlp\usr\servers\g-noteServer\logs\state\plugin-cfg.xml.
+[11/03/2024 20:00:54:062 WET] 000000df org.apache.myfaces.webapp.MyFacesContainerInitializer        I Using io.openliberty.faces40.internal.ee.WASMyFacesContainerInitializer
+[11/03/2024 20:00:54:071 WET] 000000df org.apache.myfaces.webapp.MyFacesContainerInitializer        I Added FacesServlet with mappings=[/faces/*, *.jsf, *.faces, *.xhtml]
+[11/03/2024 20:00:54:072 WET] 000000df enliberty.faces40.internal.ee.WASMyFacesContainerInitializer I Added StartupServletContextListener to the servlet context
+[11/03/2024 20:00:54:244 WET] 000000df org.apache.myfaces.config.DefaultFacesConfigurationProvider  I Found jakarta.faces.application.ApplicationFactory factory implementation: io.openliberty.faces40.internal.config.WASApplicationFactoryImpl
+[11/03/2024 20:00:54:907 WET] 000000df org.apache.myfaces.application.ApplicationImpl               I Couldn't discover the current project stage, using Production
+[11/03/2024 20:00:54:927 WET] 000000df org.apache.myfaces.webapp.FacesInitializerImpl               I MyFaces Core has started, it took [826] ms.
+[11/03/2024 20:00:54:932 WET] 000000df com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: Application g-note mise à jour en 13,448 secondes.
+[11/03/2024 20:00:55:125 WET] 000000df org.jboss.resteasy.resteasy_jaxrs.i18n                       I RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class estm.dsic.jee.rest.RestApplication$Proxy$_$$_WeldClientProxy
+[11/03/2024 20:00:55:166 WET] 000000df com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [g-note] [/g-note] [estm.dsic.jee.rest.RestApplication]: L'initialisation a abouti.

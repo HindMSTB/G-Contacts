@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Inclure Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Lien vers votre fichier CSS personnalisé -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="d-flex justify-content-center align-items-center vh-100">
+    <div class="container">
+        <h2 class="text-center">Login</h2>
+        <form id="loginForm" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
+        </form>
+        <!-- Bouton pour rediriger vers la page signup -->
+        <button onclick="redirectToSignup()" class="btn btn-secondary btn-block mt-3"> Signup</button>
+    </div>
+
+    <!-- Inclure Bootstrap JS et votre fichier JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/login.js"></script>
+
+    <script>
+        // Fonction pour rediriger vers la page signup
+        function redirectToSignup() {
+            window.location.href = 'signup.html';
+        }
+
+        // Fonction de validation du formulaire
+        function validateForm() {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Vérifier si les champs sont vides
+            if (email.trim() === '' || password.trim() === '') {
+                alert('Veuillez remplir tous les champs.');
+                return false; // Empêcher la soumission du formulaire
+            }
+
+            return true; // Autoriser la soumission du formulaire
+        }
+    </script>
+</body>
+</html>
+

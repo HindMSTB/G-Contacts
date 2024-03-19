@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Link to DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <button onclick="logout()" class="btn btn-danger logout-btn ml-auto"><i class="fas fa-sign-out-alt"></i></button>
+        </div>
+        
+        <!-- Affichage de l'email -->
+        <h4 class="welcome-text">Email: <span id="userEmail"></span></h4>
+        
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h3>Liste des Contacts (<span id="contactCount"></span>)</h3> <!-- Ajout du nombre de contacts ici -->
+            <button onclick="redirectToCreateContact()" class="btn btn-primary"><i class="fas fa-plus"></i></button>
+        </div>
+
+        <div id="contactsTableContainer" class="table-responsive">
+            <table id="contactsTable" class="table">
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Téléphone</th>
+                        <th>Email</th>
+                        <th>Adresse</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="contactsTableBody">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <!-- Modal pour modifier un contact -->
+    <div class="modal fade" id="editContactModal" tabindex="-1" role="dialog" aria-labelledby="editContactModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editContactModalLabel">Modifier Contact</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="editContactForm">
+                        <input type="hidden" id="editContactId" readonly>
+                        <div class="form-group">
+                            <label for="editContactNom">Nom</label>
+                            <input type="text" class="form-control" id="editContactNom">
+                        </div>
+                        <div class="form-group">
+                            <label for="editContactTelephone">Téléphone</label>
+                            <input type="text" class="form-control" id="editContactTelephone">
+                        </div>
+                        <div class="form-group">
+                            <label for="editContactEmail">Email</label>
+                            <input type="email" class="form-control" id="editContactEmail">
+                        </div>
+                        <div class="form-group">
+                            <label for="editContactAdresse">Adresse</label>
+                            <input type="text" class="form-control" id="editContactAdresse">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+                    <button type="button" class="btn btn-primary" onclick="submitEditContactForm()">Enregistrer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to Bootstrap JS and your JavaScript files -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Link to Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Link to DataTables JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/UserDashboard.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#contactsTable').DataTable({
+                "processing": true,
+                "serverSide": true,
+                "ajax": {
+                    "url": "http://localhost:9080/gestioncontact/api/gestioncontact/v1/users/find",
+                    "method": "POST"
+                },
+                "columns": [
+                    { "data": "nom" },
+                    { "data": "telephone" },
+                    { "data": "email" },
+                    { "data": "adresse" },
+                    { "data": "action" }
+                ]
+            });
+        });
+    </script>
+</body>
+</html>

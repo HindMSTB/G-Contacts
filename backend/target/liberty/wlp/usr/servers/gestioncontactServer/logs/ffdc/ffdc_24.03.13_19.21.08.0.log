@@ -1,0 +1,761 @@
+------Start of DE processing------ = [13/03/2024 19:21:08:357 WET]
+Exception = com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException
+Source = com.ibm.ejs.j2c.poolmanager.FreePool.createManagedConnectionWithMCWrapper
+probeid = 199
+Stack Dump = com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException: DSRA8100E: Impossible d'obtenir une PooledConnection de la source de données (DataSource). with SQL State : 08S01 SQL Code : 0
+	at com.ibm.ws.rsadapter.impl.DatabaseHelper.getPooledConnection(DatabaseHelper.java:1528)
+	at com.ibm.ws.rsadapter.impl.WSManagedConnectionFactoryImpl.getConnection(WSManagedConnectionFactoryImpl.java:857)
+	at com.ibm.ws.rsadapter.impl.WSManagedConnectionFactoryImpl.createManagedConnection(WSManagedConnectionFactoryImpl.java:698)
+	at com.ibm.ejs.j2c.FreePool.createManagedConnectionWithMCWrapper(FreePool.java:1389)
+	at com.ibm.ejs.j2c.FreePool.createOrWaitForConnection(FreePool.java:1263)
+	at com.ibm.ejs.j2c.PoolManager.reserve(PoolManager.java:1471)
+	at com.ibm.ejs.j2c.ConnectionManager.allocateMCWrapper(ConnectionManager.java:576)
+	at com.ibm.ejs.j2c.ConnectionManager.allocateConnection(ConnectionManager.java:308)
+	at com.ibm.ws.rsadapter.jdbc.WSJdbcDataSource.getConnection(WSJdbcDataSource.java:142)
+	at com.ibm.ws.rsadapter.jdbc.WSJdbcDataSource.getConnection(WSJdbcDataSource.java:116)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:140)
+	at org.eclipse.persistence.sessions.DatasourceLogin.connectToDatasource(DatasourceLogin.java:174)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.setOrDetectDatasource(DatabaseSessionImpl.java:226)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.loginAndDetectDatasource(DatabaseSessionImpl.java:809)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryProvider.login(EntityManagerFactoryProvider.java:259)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:771)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getAbstractSession(EntityManagerFactoryDelegate.java:221)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getDatabaseSession(EntityManagerFactoryDelegate.java:199)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.getDatabaseSession(EntityManagerFactoryImpl.java:534)
+	at org.eclipse.persistence.jpa.PersistenceProvider.createContainerEntityManagerFactoryImpl(PersistenceProvider.java:385)
+	at org.eclipse.persistence.jpa.PersistenceProvider.createContainerEntityManagerFactory(PersistenceProvider.java:313)
+	at com.ibm.ws.jpa.management.JPAPUnitInfo.createEMFactory(JPAPUnitInfo.java:936)
+	at com.ibm.ws.jpa.management.JPAPUnitInfo.initialize(JPAPUnitInfo.java:772)
+	at com.ibm.ws.jpa.management.JPAPxmlInfo.extractPersistenceUnits(JPAPxmlInfo.java:184)
+	at com.ibm.ws.jpa.management.JPAScopeInfo.processPersistenceUnit(JPAScopeInfo.java:90)
+	at com.ibm.ws.jpa.management.JPAApplInfo.addPersistenceUnits(JPAApplInfo.java:121)
+	at com.ibm.ws.jpa.container.osgi.internal.JPAComponentImpl.processWebModulePersistenceXml(JPAComponentImpl.java:595)
+	at com.ibm.ws.jpa.container.osgi.internal.JPAComponentImpl.applicationStarting(JPAComponentImpl.java:378)
+	at com.ibm.ws.container.service.state.internal.ApplicationStateManager.fireStarting(ApplicationStateManager.java:53)
+	at com.ibm.ws.container.service.state.internal.StateChangeServiceImpl.fireApplicationStarting(StateChangeServiceImpl.java:52)
+	at com.ibm.ws.app.manager.module.internal.SimpleDeployedAppInfoBase.preDeployApp(SimpleDeployedAppInfoBase.java:550)
+	at com.ibm.ws.app.manager.module.internal.SimpleDeployedAppInfoBase.installApp(SimpleDeployedAppInfoBase.java:511)
+	at com.ibm.ws.app.manager.module.internal.DeployedAppInfoBase.deployApp(DeployedAppInfoBase.java:351)
+	at com.ibm.ws.app.manager.war.internal.WARApplicationHandlerImpl.install(WARApplicationHandlerImpl.java:67)
+	at com.ibm.ws.app.manager.internal.statemachine.StartAction.execute(StartAction.java:184)
+	at com.ibm.ws.app.manager.internal.statemachine.ApplicationStateMachineImpl.enterState(ApplicationStateMachineImpl.java:1369)
+	at com.ibm.ws.app.manager.internal.statemachine.ApplicationStateMachineImpl.run(ApplicationStateMachineImpl.java:912)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:280)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.sql.SQLRecoverableException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server. DSRA0010E: Etat SQL = 08S01, Code d'erreur = 0
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:438)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:189)
+	at com.mysql.cj.jdbc.MysqlDataSource.getConnection(MysqlDataSource.java:417)
+	at com.mysql.cj.jdbc.MysqlDataSource.getConnection(MysqlDataSource.java:129)
+	at com.mysql.cj.jdbc.MysqlDataSource.getConnection(MysqlDataSource.java:114)
+	at com.mysql.cj.jdbc.MysqlConnectionPoolDataSource.getPooledConnection(MysqlConnectionPoolDataSource.java:48)
+	at com.ibm.ws.rsadapter.impl.DatabaseHelper$1.run(DatabaseHelper.java:1516)
+	at com.ibm.ws.rsadapter.impl.DatabaseHelper$1.run(DatabaseHelper.java:1502)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.base/java.security.AccessController.doPrivilegedWithCombiner(AccessController.java:618)
+	at com.ibm.ws.rsadapter.impl.DatabaseHelper.getPooledConnection(DatabaseHelper.java:1502)
+	... 40 more
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:104)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:149)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:165)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:88)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:120)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:935)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:805)
+	... 52 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:589)
+	at java.base/sun.nio.ch.Net.connect(Net.java:578)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:153)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:62)
+	... 55 more
+
+Dump of callerThis
+Object type = com.ibm.ejs.j2c.FreePool
+  tc = class com.ibm.websphere.ras.TraceComponent@384e8cb4
+    strings[0] = "TraceComponent[com.ibm.ejs.j2c.FreePool,class com.ibm.ejs.j2c.FreePool,[WAS.j2c],com.ibm.ws.j2c.resources.J2CAMessages,null]"
+  mcWrapperList = class com.ibm.ejs.j2c.MCWrapperList@3945daff
+    serialVersionUID = -4093886924342827512
+    serialVersionUID = "/* Could not access serialVersionUID */"
+    DEFAULT_CAPACITY = "/* Could not access DEFAULT_CAPACITY */"
+    EMPTY_ELEMENTDATA = "/* Could not access EMPTY_ELEMENTDATA */"
+    DEFAULTCAPACITY_EMPTY_ELEMENTDATA = "/* Could not access DEFAULTCAPACITY_EMPTY_ELEMENTDATA */"
+    elementData = "/* Could not access elementData */"
+    size = "/* Could not access size */"
+    modCount = "/* Could not access modCount */"
+  nl = "
+"
+  freeConnectionLockObject = class com.ibm.ejs.j2c.FreePool$1@1403d07a
+    this$0 = class com.ibm.ejs.j2c.FreePool@25d227c0
+  pm = class com.ibm.ejs.j2c.PoolManager@3ee0270e
+    tc = class com.ibm.websphere.ras.TraceComponent@5f6e07e2
+      strings[0] = "TraceComponent[com.ibm.ejs.j2c.PoolManager,class com.ibm.ejs.j2c.PoolManager,[WAS.j2c],com.ibm.ws.j2c.resources.J2CAMessages,null]"
+    alertResourceBundleName = "com.ibm.ws.j2c.resources.J2CAMessages"
+    nl = "
+"
+    connectorSvc = class com.ibm.ejs.j2c.ConnectorServiceImpl@2b09aead
+      tc = class com.ibm.websphere.ras.TraceComponent@5cdc0c5c
+      authDataServiceRef = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@66f1a7ec
+      classLoaderIdentifierService = class com.ibm.ws.classloading.internal.ClassLoadingServiceImpl@242c15fe
+      deferrableSchedXSvcRef = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@6a5a87c9
+      execSvcRef = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@5b83dc1d
+      isHeritageEnabled = false
+      nonDeferrableSchedXSvcRef = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@30a6de46
+      rrsXAResFactorySvcRef = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@7461ae49
+      transactionManager = class com.ibm.ws.transaction.services.TransactionManagerService@4a3b1bc3
+      variableRegistrySvcRef = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@f1d55ad
+      tc = class com.ibm.websphere.ras.TraceComponent@7c21792a
+      NLS = class com.ibm.ejs.ras.TraceNLS@9cffee6
+    gConfigProps = class com.ibm.ejs.j2c.J2CGlobalConfigProperties@42d48dda
+    reaperThreadStarted = false
+    taskTimerLockObject = class com.ibm.ejs.j2c.PoolManager$PoolManagerLock@4dd54c4b
+    waitSkip = 0
+    displayInfiniteWaitMessage = false
+    tlsArrayLists = class java.util.concurrent.ConcurrentHashMap@751c71ce
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      MAXIMUM_CAPACITY = "/* Could not access MAXIMUM_CAPACITY */"
+      DEFAULT_CAPACITY = "/* Could not access DEFAULT_CAPACITY */"
+      MAX_ARRAY_SIZE = "/* Could not access MAX_ARRAY_SIZE */"
+      DEFAULT_CONCURRENCY_LEVEL = "/* Could not access DEFAULT_CONCURRENCY_LEVEL */"
+      LOAD_FACTOR = "/* Could not access LOAD_FACTOR */"
+      TREEIFY_THRESHOLD = "/* Could not access TREEIFY_THRESHOLD */"
+      UNTREEIFY_THRESHOLD = "/* Could not access UNTREEIFY_THRESHOLD */"
+      MIN_TREEIFY_CAPACITY = "/* Could not access MIN_TREEIFY_CAPACITY */"
+      MIN_TRANSFER_STRIDE = "/* Could not access MIN_TRANSFER_STRIDE */"
+      RESIZE_STAMP_BITS = "/* Could not access RESIZE_STAMP_BITS */"
+      MAX_RESIZERS = "/* Could not access MAX_RESIZERS */"
+      RESIZE_STAMP_SHIFT = "/* Could not access RESIZE_STAMP_SHIFT */"
+      MOVED = "/* Could not access MOVED */"
+      TREEBIN = "/* Could not access TREEBIN */"
+      RESERVED = "/* Could not access RESERVED */"
+      HASH_BITS = "/* Could not access HASH_BITS */"
+      NCPU = "/* Could not access NCPU */"
+      serialPersistentFields = "/* Could not access serialPersistentFields */"
+      table = "/* Could not access table */"
+      nextTable = "/* Could not access nextTable */"
+      baseCount = "/* Could not access baseCount */"
+      sizeCtl = "/* Could not access sizeCtl */"
+      transferIndex = "/* Could not access transferIndex */"
+      cellsBusy = "/* Could not access cellsBusy */"
+      counterCells = "/* Could not access counterCells */"
+      keySet = "/* Could not access keySet */"
+      values = "/* Could not access values */"
+      entrySet = "/* Could not access entrySet */"
+      U = "/* Could not access U */"
+      SIZECTL = "/* Could not access SIZECTL */"
+      TRANSFERINDEX = "/* Could not access TRANSFERINDEX */"
+      BASECOUNT = "/* Could not access BASECOUNT */"
+      CELLSBUSY = "/* Could not access CELLSBUSY */"
+      CELLVALUE = "/* Could not access CELLVALUE */"
+      ABASE = "/* Could not access ABASE */"
+      ASHIFT = "/* Could not access ASHIFT */"
+      keySet = "/* Could not access keySet */"
+      values = "/* Could not access values */"
+    sharedPool = class com.ibm.ejs.j2c.SharedPool[200]
+      SharedPool[0] = class com.ibm.ejs.j2c.SharedPool@70250a70
+      SharedPool[1] = class com.ibm.ejs.j2c.SharedPool@62d2f2b4
+      SharedPool[2] = class com.ibm.ejs.j2c.SharedPool@707637e
+      SharedPool[3] = class com.ibm.ejs.j2c.SharedPool@714985b6
+      SharedPool[4] = class com.ibm.ejs.j2c.SharedPool@29e76765
+      SharedPool[5] = class com.ibm.ejs.j2c.SharedPool@5cd577bf
+      SharedPool[6] = class com.ibm.ejs.j2c.SharedPool@6075f3c8
+      SharedPool[7] = class com.ibm.ejs.j2c.SharedPool@5dacbe45
+      SharedPool[8] = class com.ibm.ejs.j2c.SharedPool@4f6226da
+      SharedPool[9] = class com.ibm.ejs.j2c.SharedPool@38fdc806
+      SharedPool[10] = class com.ibm.ejs.j2c.SharedPool@77598762
+      SharedPool[11] = class com.ibm.ejs.j2c.SharedPool@4f3f515a
+      SharedPool[12] = class com.ibm.ejs.j2c.SharedPool@1135ea91
+      SharedPool[13] = class com.ibm.ejs.j2c.SharedPool@47debd49
+      SharedPool[14] = class com.ibm.ejs.j2c.SharedPool@7c875047
+      SharedPool[15] = class com.ibm.ejs.j2c.SharedPool@49077b0c
+      SharedPool[16] = class com.ibm.ejs.j2c.SharedPool@775861df
+      SharedPool[17] = class com.ibm.ejs.j2c.SharedPool@455ebe88
+      SharedPool[18] = class com.ibm.ejs.j2c.SharedPool@39dcb0c
+      SharedPool[19] = class com.ibm.ejs.j2c.SharedPool@71b00f68
+      SharedPool[20] = class com.ibm.ejs.j2c.SharedPool@45d2de18
+      SharedPool[21] = class com.ibm.ejs.j2c.SharedPool@754892d4
+      SharedPool[22] = class com.ibm.ejs.j2c.SharedPool@1860e2da
+      SharedPool[23] = class com.ibm.ejs.j2c.SharedPool@69da65f1
+      SharedPool[24] = class com.ibm.ejs.j2c.SharedPool@3aab54cc
+      SharedPool[25] = class com.ibm.ejs.j2c.SharedPool@bc4bf7f
+      SharedPool[26] = class com.ibm.ejs.j2c.SharedPool@14adeaef
+      SharedPool[27] = class com.ibm.ejs.j2c.SharedPool@2ee2e066
+      SharedPool[28] = class com.ibm.ejs.j2c.SharedPool@4e8fdc42
+      SharedPool[29] = class com.ibm.ejs.j2c.SharedPool@601eadab
+      SharedPool[30] = class com.ibm.ejs.j2c.SharedPool@1b1fd9d5
+      SharedPool[31] = class com.ibm.ejs.j2c.SharedPool@22c7eb00
+      SharedPool[32] = class com.ibm.ejs.j2c.SharedPool@129a4ed6
+      SharedPool[33] = class com.ibm.ejs.j2c.SharedPool@7fccadb
+      SharedPool[34] = class com.ibm.ejs.j2c.SharedPool@62c86a80
+      SharedPool[35] = class com.ibm.ejs.j2c.SharedPool@7f4a0232
+      SharedPool[36] = class com.ibm.ejs.j2c.SharedPool@3f660ff3
+      SharedPool[37] = class com.ibm.ejs.j2c.SharedPool@5e2db0d6
+      SharedPool[38] = class com.ibm.ejs.j2c.SharedPool@7f105df9
+      SharedPool[39] = class com.ibm.ejs.j2c.SharedPool@50e49bbb
+      SharedPool[40] = class com.ibm.ejs.j2c.SharedPool@5ff20fc3
+      SharedPool[41] = class com.ibm.ejs.j2c.SharedPool@6ceabfeb
+      SharedPool[42] = class com.ibm.ejs.j2c.SharedPool@11e8d81a
+      SharedPool[43] = class com.ibm.ejs.j2c.SharedPool@6525b0df
+      SharedPool[44] = class com.ibm.ejs.j2c.SharedPool@2ae627af
+      SharedPool[45] = class com.ibm.ejs.j2c.SharedPool@13cad0ff
+      SharedPool[46] = class com.ibm.ejs.j2c.SharedPool@4435f294
+      SharedPool[47] = class com.ibm.ejs.j2c.SharedPool@cde0185
+      SharedPool[48] = class com.ibm.ejs.j2c.SharedPool@171e94ee
+      SharedPool[49] = class com.ibm.ejs.j2c.SharedPool@5216e3da
+      SharedPool[50] = class com.ibm.ejs.j2c.SharedPool@39dc0a5e
+      SharedPool[51] = class com.ibm.ejs.j2c.SharedPool@4572e6c9
+      SharedPool[52] = class com.ibm.ejs.j2c.SharedPool@26a8a36d
+      SharedPool[53] = class com.ibm.ejs.j2c.SharedPool@43c58c51
+      SharedPool[54] = class com.ibm.ejs.j2c.SharedPool@1a12e08d
+      SharedPool[55] = class com.ibm.ejs.j2c.SharedPool@480419a8
+      SharedPool[56] = class com.ibm.ejs.j2c.SharedPool@2b54780e
+      SharedPool[57] = class com.ibm.ejs.j2c.SharedPool@441cde31
+      SharedPool[58] = class com.ibm.ejs.j2c.SharedPool@490758b7
+      SharedPool[59] = class com.ibm.ejs.j2c.SharedPool@2126d166
+      SharedPool[60] = class com.ibm.ejs.j2c.SharedPool@293a4944
+      SharedPool[61] = class com.ibm.ejs.j2c.SharedPool@bf5e704
+      SharedPool[62] = class com.ibm.ejs.j2c.SharedPool@78c4d42d
+      SharedPool[63] = class com.ibm.ejs.j2c.SharedPool@6f7e97b2
+      SharedPool[64] = class com.ibm.ejs.j2c.SharedPool@14758370
+      SharedPool[65] = class com.ibm.ejs.j2c.SharedPool@309c8b3d
+      SharedPool[66] = class com.ibm.ejs.j2c.SharedPool@6ea754bf
+      SharedPool[67] = class com.ibm.ejs.j2c.SharedPool@75ff9dde
+      SharedPool[68] = class com.ibm.ejs.j2c.SharedPool@4d29ee12
+      SharedPool[69] = class com.ibm.ejs.j2c.SharedPool@193841e9
+      SharedPool[70] = class com.ibm.ejs.j2c.SharedPool@4d6efcdd
+      SharedPool[71] = class com.ibm.ejs.j2c.SharedPool@447699c3
+      SharedPool[72] = class com.ibm.ejs.j2c.SharedPool@462da621
+      SharedPool[73] = class com.ibm.ejs.j2c.SharedPool@1d418004
+      SharedPool[74] = class com.ibm.ejs.j2c.SharedPool@27730f65
+      SharedPool[75] = class com.ibm.ejs.j2c.SharedPool@57bb32c9
+      SharedPool[76] = class com.ibm.ejs.j2c.SharedPool@7c0c8ab1
+      SharedPool[77] = class com.ibm.ejs.j2c.SharedPool@6ddc7494
+      SharedPool[78] = class com.ibm.ejs.j2c.SharedPool@526b566d
+      SharedPool[79] = class com.ibm.ejs.j2c.SharedPool@5cc81b93
+      SharedPool[80] = class com.ibm.ejs.j2c.SharedPool@44094bb9
+      SharedPool[81] = class com.ibm.ejs.j2c.SharedPool@4affff78
+      SharedPool[82] = class com.ibm.ejs.j2c.SharedPool@42af1074
+      SharedPool[83] = class com.ibm.ejs.j2c.SharedPool@5ea79f31
+      SharedPool[84] = class com.ibm.ejs.j2c.SharedPool@507d53df
+      SharedPool[85] = class com.ibm.ejs.j2c.SharedPool@65cc6297
+      SharedPool[86] = class com.ibm.ejs.j2c.SharedPool@5f5ae2ea
+      SharedPool[87] = class com.ibm.ejs.j2c.SharedPool@3de6a027
+      SharedPool[88] = class com.ibm.ejs.j2c.SharedPool@7bfffef
+      SharedPool[89] = class com.ibm.ejs.j2c.SharedPool@1e1fd55
+      SharedPool[90] = class com.ibm.ejs.j2c.SharedPool@9241231
+      SharedPool[91] = class com.ibm.ejs.j2c.SharedPool@14b6caa
+      SharedPool[92] = class com.ibm.ejs.j2c.SharedPool@79f3bbeb
+      SharedPool[93] = class com.ibm.ejs.j2c.SharedPool@7776ead5
+      SharedPool[94] = class com.ibm.ejs.j2c.SharedPool@5eeadb90
+      SharedPool[95] = class com.ibm.ejs.j2c.SharedPool@41ed2db
+      SharedPool[96] = class com.ibm.ejs.j2c.SharedPool@60d61d50
+      SharedPool[97] = class com.ibm.ejs.j2c.SharedPool@20b663dd
+      SharedPool[98] = class com.ibm.ejs.j2c.SharedPool@28081a00
+      SharedPool[99] = class com.ibm.ejs.j2c.SharedPool@5a729dd0
+      SharedPool[100] = class com.ibm.ejs.j2c.SharedPool@a1e2753
+      SharedPool[101] = class com.ibm.ejs.j2c.SharedPool@19a51546
+      SharedPool[102] = class com.ibm.ejs.j2c.SharedPool@7115c468
+      SharedPool[103] = class com.ibm.ejs.j2c.SharedPool@3fc75b87
+      SharedPool[104] = class com.ibm.ejs.j2c.SharedPool@4498d793
+      SharedPool[105] = class com.ibm.ejs.j2c.SharedPool@7526e563
+      SharedPool[106] = class com.ibm.ejs.j2c.SharedPool@2a4f592b
+      SharedPool[107] = class com.ibm.ejs.j2c.SharedPool@2fd12486
+      SharedPool[108] = class com.ibm.ejs.j2c.SharedPool@2df75aa0
+      SharedPool[109] = class com.ibm.ejs.j2c.SharedPool@6fb8bf80
+      SharedPool[110] = class com.ibm.ejs.j2c.SharedPool@3f6e255d
+      SharedPool[111] = class com.ibm.ejs.j2c.SharedPool@19bdd322
+      SharedPool[112] = class com.ibm.ejs.j2c.SharedPool@e88b8ef
+      SharedPool[113] = class com.ibm.ejs.j2c.SharedPool@24e65201
+      SharedPool[114] = class com.ibm.ejs.j2c.SharedPool@6a6ccf0d
+      SharedPool[115] = class com.ibm.ejs.j2c.SharedPool@1d3f25a1
+      SharedPool[116] = class com.ibm.ejs.j2c.SharedPool@56bba929
+      SharedPool[117] = class com.ibm.ejs.j2c.SharedPool@405b9fa5
+      SharedPool[118] = class com.ibm.ejs.j2c.SharedPool@4c432404
+      SharedPool[119] = class com.ibm.ejs.j2c.SharedPool@28b51200
+      SharedPool[120] = class com.ibm.ejs.j2c.SharedPool@234c14de
+      SharedPool[121] = class com.ibm.ejs.j2c.SharedPool@3f7611a5
+      SharedPool[122] = class com.ibm.ejs.j2c.SharedPool@6a40714b
+      SharedPool[123] = class com.ibm.ejs.j2c.SharedPool@6a654b11
+      SharedPool[124] = class com.ibm.ejs.j2c.SharedPool@294c4867
+      SharedPool[125] = class com.ibm.ejs.j2c.SharedPool@26389fd2
+      SharedPool[126] = class com.ibm.ejs.j2c.SharedPool@4f9b7877
+      SharedPool[127] = class com.ibm.ejs.j2c.SharedPool@fe68f56
+      SharedPool[128] = class com.ibm.ejs.j2c.SharedPool@4422f1bd
+      SharedPool[129] = class com.ibm.ejs.j2c.SharedPool@260620e4
+      SharedPool[130] = class com.ibm.ejs.j2c.SharedPool@32cabc93
+      SharedPool[131] = class com.ibm.ejs.j2c.SharedPool@96d09a3
+      SharedPool[132] = class com.ibm.ejs.j2c.SharedPool@5a11ae2a
+      SharedPool[133] = class com.ibm.ejs.j2c.SharedPool@4d07a48c
+      SharedPool[134] = class com.ibm.ejs.j2c.SharedPool@2acea79b
+      SharedPool[135] = class com.ibm.ejs.j2c.SharedPool@4b0f8370
+      SharedPool[136] = class com.ibm.ejs.j2c.SharedPool@1cb814c5
+      SharedPool[137] = class com.ibm.ejs.j2c.SharedPool@6cebe01a
+      SharedPool[138] = class com.ibm.ejs.j2c.SharedPool@33c67063
+      SharedPool[139] = class com.ibm.ejs.j2c.SharedPool@4e56168
+      SharedPool[140] = class com.ibm.ejs.j2c.SharedPool@58a7430d
+      SharedPool[141] = class com.ibm.ejs.j2c.SharedPool@6bff9333
+      SharedPool[142] = class com.ibm.ejs.j2c.SharedPool@6bbaa347
+      SharedPool[143] = class com.ibm.ejs.j2c.SharedPool@447b7179
+      SharedPool[144] = class com.ibm.ejs.j2c.SharedPool@26a6fdd0
+      SharedPool[145] = class com.ibm.ejs.j2c.SharedPool@31d7843c
+      SharedPool[146] = class com.ibm.ejs.j2c.SharedPool@f49a9da
+      SharedPool[147] = class com.ibm.ejs.j2c.SharedPool@10a6f1f3
+      SharedPool[148] = class com.ibm.ejs.j2c.SharedPool@17fd64a
+      SharedPool[149] = class com.ibm.ejs.j2c.SharedPool@c84443d
+      SharedPool[150] = class com.ibm.ejs.j2c.SharedPool@4e413b0e
+      SharedPool[151] = class com.ibm.ejs.j2c.SharedPool@69cf625c
+      SharedPool[152] = class com.ibm.ejs.j2c.SharedPool@16fd24a9
+      SharedPool[153] = class com.ibm.ejs.j2c.SharedPool@38763fe7
+      SharedPool[154] = class com.ibm.ejs.j2c.SharedPool@7f28faac
+      SharedPool[155] = class com.ibm.ejs.j2c.SharedPool@6de7aa97
+      SharedPool[156] = class com.ibm.ejs.j2c.SharedPool@124013ee
+      SharedPool[157] = class com.ibm.ejs.j2c.SharedPool@1bc09f46
+      SharedPool[158] = class com.ibm.ejs.j2c.SharedPool@2305fb08
+      SharedPool[159] = class com.ibm.ejs.j2c.SharedPool@73e65eed
+      SharedPool[160] = class com.ibm.ejs.j2c.SharedPool@612bec1c
+      SharedPool[161] = class com.ibm.ejs.j2c.SharedPool@7e0e75d0
+      SharedPool[162] = class com.ibm.ejs.j2c.SharedPool@72df1ca2
+      SharedPool[163] = class com.ibm.ejs.j2c.SharedPool@338f3522
+      SharedPool[164] = class com.ibm.ejs.j2c.SharedPool@dfa7443
+      SharedPool[165] = class com.ibm.ejs.j2c.SharedPool@5720d9
+      SharedPool[166] = class com.ibm.ejs.j2c.SharedPool@ae7167d
+      SharedPool[167] = class com.ibm.ejs.j2c.SharedPool@408b0426
+      SharedPool[168] = class com.ibm.ejs.j2c.SharedPool@1e0d2818
+      SharedPool[169] = class com.ibm.ejs.j2c.SharedPool@27e592e8
+      SharedPool[170] = class com.ibm.ejs.j2c.SharedPool@15032c97
+      SharedPool[171] = class com.ibm.ejs.j2c.SharedPool@d31b025
+      SharedPool[172] = class com.ibm.ejs.j2c.SharedPool@7a0b0473
+      SharedPool[173] = class com.ibm.ejs.j2c.SharedPool@71f2bb08
+      SharedPool[174] = class com.ibm.ejs.j2c.SharedPool@7d994635
+      SharedPool[175] = class com.ibm.ejs.j2c.SharedPool@7d29613b
+      SharedPool[176] = class com.ibm.ejs.j2c.SharedPool@5fa3da71
+      SharedPool[177] = class com.ibm.ejs.j2c.SharedPool@3b6d1076
+      SharedPool[178] = class com.ibm.ejs.j2c.SharedPool@c7251c0
+      SharedPool[179] = class com.ibm.ejs.j2c.SharedPool@3a64d9cc
+      SharedPool[180] = class com.ibm.ejs.j2c.SharedPool@7bd5eca3
+      SharedPool[181] = class com.ibm.ejs.j2c.SharedPool@2868ad0f
+      SharedPool[182] = class com.ibm.ejs.j2c.SharedPool@368a0593
+      SharedPool[183] = class com.ibm.ejs.j2c.SharedPool@2abc1037
+      SharedPool[184] = class com.ibm.ejs.j2c.SharedPool@7ed84137
+      SharedPool[185] = class com.ibm.ejs.j2c.SharedPool@13b59b36
+      SharedPool[186] = class com.ibm.ejs.j2c.SharedPool@7575a24e
+      SharedPool[187] = class com.ibm.ejs.j2c.SharedPool@3f02397f
+      SharedPool[188] = class com.ibm.ejs.j2c.SharedPool@36f1651
+      SharedPool[189] = class com.ibm.ejs.j2c.SharedPool@3cbc4121
+      SharedPool[190] = class com.ibm.ejs.j2c.SharedPool@6403f32a
+      SharedPool[191] = class com.ibm.ejs.j2c.SharedPool@4ae4e714
+      SharedPool[192] = class com.ibm.ejs.j2c.SharedPool@31c2bd87
+      SharedPool[193] = class com.ibm.ejs.j2c.SharedPool@6fa947d7
+      SharedPool[194] = class com.ibm.ejs.j2c.SharedPool@14c863ab
+      SharedPool[195] = class com.ibm.ejs.j2c.SharedPool@79f9fa61
+      SharedPool[196] = class com.ibm.ejs.j2c.SharedPool@5df34e5c
+      SharedPool[197] = class com.ibm.ejs.j2c.SharedPool@78c13dca
+      SharedPool[198] = class com.ibm.ejs.j2c.SharedPool@2f43dc42
+      SharedPool[199] = class com.ibm.ejs.j2c.SharedPool@195f0139
+    freePool = class com.ibm.ejs.j2c.FreePool[100]
+      FreePool[0] = class com.ibm.ejs.j2c.FreePool@25d227c0
+      FreePool[1] = class com.ibm.ejs.j2c.FreePool@2d4b7c6d
+      FreePool[2] = class com.ibm.ejs.j2c.FreePool@499dda3f
+      FreePool[3] = class com.ibm.ejs.j2c.FreePool@544390f2
+      FreePool[4] = class com.ibm.ejs.j2c.FreePool@417bf93b
+      FreePool[5] = class com.ibm.ejs.j2c.FreePool@37a54d6d
+      FreePool[6] = class com.ibm.ejs.j2c.FreePool@10ce2584
+      FreePool[7] = class com.ibm.ejs.j2c.FreePool@5842e36f
+      FreePool[8] = class com.ibm.ejs.j2c.FreePool@466e7b7d
+      FreePool[9] = class com.ibm.ejs.j2c.FreePool@5bbd88f8
+      FreePool[10] = class com.ibm.ejs.j2c.FreePool@3a3e740e
+      FreePool[11] = class com.ibm.ejs.j2c.FreePool@7528a1bd
+      FreePool[12] = class com.ibm.ejs.j2c.FreePool@402899f6
+      FreePool[13] = class com.ibm.ejs.j2c.FreePool@77e52343
+      FreePool[14] = class com.ibm.ejs.j2c.FreePool@3e32b7b5
+      FreePool[15] = class com.ibm.ejs.j2c.FreePool@ea7dc87
+      FreePool[16] = class com.ibm.ejs.j2c.FreePool@a44038c
+      FreePool[17] = class com.ibm.ejs.j2c.FreePool@54e5d6bc
+      FreePool[18] = class com.ibm.ejs.j2c.FreePool@7fc15c8a
+      FreePool[19] = class com.ibm.ejs.j2c.FreePool@4f32f411
+      FreePool[20] = class com.ibm.ejs.j2c.FreePool@65c0d618
+      FreePool[21] = class com.ibm.ejs.j2c.FreePool@1f6abc2a
+      FreePool[22] = class com.ibm.ejs.j2c.FreePool@6a3a8641
+      FreePool[23] = class com.ibm.ejs.j2c.FreePool@32f0756b
+      FreePool[24] = class com.ibm.ejs.j2c.FreePool@51e3053b
+      FreePool[25] = class com.ibm.ejs.j2c.FreePool@1ba278c1
+      FreePool[26] = class com.ibm.ejs.j2c.FreePool@2594fd7a
+      FreePool[27] = class com.ibm.ejs.j2c.FreePool@14fe8f8e
+      FreePool[28] = class com.ibm.ejs.j2c.FreePool@5dfd9af7
+      FreePool[29] = class com.ibm.ejs.j2c.FreePool@559195f9
+      FreePool[30] = class com.ibm.ejs.j2c.FreePool@576cdd1c
+      FreePool[31] = class com.ibm.ejs.j2c.FreePool@370eaa80
+      FreePool[32] = class com.ibm.ejs.j2c.FreePool@615b4b4
+      FreePool[33] = class com.ibm.ejs.j2c.FreePool@5f72c7d2
+      FreePool[34] = class com.ibm.ejs.j2c.FreePool@6ec7651d
+      FreePool[35] = class com.ibm.ejs.j2c.FreePool@2c5f88ef
+      FreePool[36] = class com.ibm.ejs.j2c.FreePool@7c429c4
+      FreePool[37] = class com.ibm.ejs.j2c.FreePool@4ec132b9
+      FreePool[38] = class com.ibm.ejs.j2c.FreePool@1bfb59f1
+      FreePool[39] = class com.ibm.ejs.j2c.FreePool@4b33a291
+      FreePool[40] = class com.ibm.ejs.j2c.FreePool@6d9f283a
+      FreePool[41] = class com.ibm.ejs.j2c.FreePool@2a8c8bca
+      FreePool[42] = class com.ibm.ejs.j2c.FreePool@6bf96bbb
+      FreePool[43] = class com.ibm.ejs.j2c.FreePool@3d086b7f
+      FreePool[44] = class com.ibm.ejs.j2c.FreePool@29425a1c
+      FreePool[45] = class com.ibm.ejs.j2c.FreePool@67de5625
+      FreePool[46] = class com.ibm.ejs.j2c.FreePool@47da4dd6
+      FreePool[47] = class com.ibm.ejs.j2c.FreePool@397795c1
+      FreePool[48] = class com.ibm.ejs.j2c.FreePool@2deba49
+      FreePool[49] = class com.ibm.ejs.j2c.FreePool@1724ab49
+      FreePool[50] = class com.ibm.ejs.j2c.FreePool@285f086
+      FreePool[51] = class com.ibm.ejs.j2c.FreePool@7d9a48a
+      FreePool[52] = class com.ibm.ejs.j2c.FreePool@70225aca
+      FreePool[53] = class com.ibm.ejs.j2c.FreePool@42eed964
+      FreePool[54] = class com.ibm.ejs.j2c.FreePool@6f42107f
+      FreePool[55] = class com.ibm.ejs.j2c.FreePool@257504e9
+      FreePool[56] = class com.ibm.ejs.j2c.FreePool@4763fe87
+      FreePool[57] = class com.ibm.ejs.j2c.FreePool@73723af6
+      FreePool[58] = class com.ibm.ejs.j2c.FreePool@c4c0d0f
+      FreePool[59] = class com.ibm.ejs.j2c.FreePool@1931223
+      FreePool[60] = class com.ibm.ejs.j2c.FreePool@59dc5350
+      FreePool[61] = class com.ibm.ejs.j2c.FreePool@3b1b7717
+      FreePool[62] = class com.ibm.ejs.j2c.FreePool@5753210e
+      FreePool[63] = class com.ibm.ejs.j2c.FreePool@4e4823cd
+      FreePool[64] = class com.ibm.ejs.j2c.FreePool@75b5bf87
+      FreePool[65] = class com.ibm.ejs.j2c.FreePool@15f6cde9
+      FreePool[66] = class com.ibm.ejs.j2c.FreePool@5b63c508
+      FreePool[67] = class com.ibm.ejs.j2c.FreePool@543ac3e2
+      FreePool[68] = class com.ibm.ejs.j2c.FreePool@c2b1765
+      FreePool[69] = class com.ibm.ejs.j2c.FreePool@2f111a8c
+      FreePool[70] = class com.ibm.ejs.j2c.FreePool@6a9fd1e3
+      FreePool[71] = class com.ibm.ejs.j2c.FreePool@68b83a81
+      FreePool[72] = class com.ibm.ejs.j2c.FreePool@3cfc88cc
+      FreePool[73] = class com.ibm.ejs.j2c.FreePool@1b9e30a5
+      FreePool[74] = class com.ibm.ejs.j2c.FreePool@f9afafc
+      FreePool[75] = class com.ibm.ejs.j2c.FreePool@26dfb5bc
+      FreePool[76] = class com.ibm.ejs.j2c.FreePool@7ebdf343
+      FreePool[77] = class com.ibm.ejs.j2c.FreePool@14ccff29
+      FreePool[78] = class com.ibm.ejs.j2c.FreePool@4cd9aa56
+      FreePool[79] = class com.ibm.ejs.j2c.FreePool@17f08424
+      FreePool[80] = class com.ibm.ejs.j2c.FreePool@6464a72
+      FreePool[81] = class com.ibm.ejs.j2c.FreePool@7500d824
+      FreePool[82] = class com.ibm.ejs.j2c.FreePool@740a57c8
+      FreePool[83] = class com.ibm.ejs.j2c.FreePool@67482cc9
+      FreePool[84] = class com.ibm.ejs.j2c.FreePool@53e9ff88
+      FreePool[85] = class com.ibm.ejs.j2c.FreePool@20dbcc29
+      FreePool[86] = class com.ibm.ejs.j2c.FreePool@6497bed
+      FreePool[87] = class com.ibm.ejs.j2c.FreePool@20c12189
+      FreePool[88] = class com.ibm.ejs.j2c.FreePool@3cc88fa6
+      FreePool[89] = class com.ibm.ejs.j2c.FreePool@420cb692
+      FreePool[90] = class com.ibm.ejs.j2c.FreePool@f573b2d
+      FreePool[91] = class com.ibm.ejs.j2c.FreePool@26b38e27
+      FreePool[92] = class com.ibm.ejs.j2c.FreePool@5e7e90e8
+      FreePool[93] = class com.ibm.ejs.j2c.FreePool@79e11593
+      FreePool[94] = class com.ibm.ejs.j2c.FreePool@4f59d7d1
+      FreePool[95] = class com.ibm.ejs.j2c.FreePool@75a1baab
+      FreePool[96] = class com.ibm.ejs.j2c.FreePool@5f728d27
+      FreePool[97] = class com.ibm.ejs.j2c.FreePool@2ece56d7
+      FreePool[98] = class com.ibm.ejs.j2c.FreePool@2f28eb80
+      FreePool[99] = class com.ibm.ejs.j2c.FreePool@57a4782c
+    mcWrapperWaiterList = class com.ibm.ejs.j2c.MCWrapperList@b5ce750
+      serialVersionUID = -4093886924342827512
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      DEFAULT_CAPACITY = "/* Could not access DEFAULT_CAPACITY */"
+      EMPTY_ELEMENTDATA = "/* Could not access EMPTY_ELEMENTDATA */"
+      DEFAULTCAPACITY_EMPTY_ELEMENTDATA = "/* Could not access DEFAULTCAPACITY_EMPTY_ELEMENTDATA */"
+      elementData = "/* Could not access elementData */"
+      size = "/* Could not access size */"
+      modCount = "/* Could not access modCount */"
+    mcToMCWMap = class java.util.HashMap@6a797155
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      DEFAULT_INITIAL_CAPACITY = "/* Could not access DEFAULT_INITIAL_CAPACITY */"
+      MAXIMUM_CAPACITY = "/* Could not access MAXIMUM_CAPACITY */"
+      DEFAULT_LOAD_FACTOR = "/* Could not access DEFAULT_LOAD_FACTOR */"
+      TREEIFY_THRESHOLD = "/* Could not access TREEIFY_THRESHOLD */"
+      UNTREEIFY_THRESHOLD = "/* Could not access UNTREEIFY_THRESHOLD */"
+      MIN_TREEIFY_CAPACITY = "/* Could not access MIN_TREEIFY_CAPACITY */"
+      table = "/* Could not access table */"
+      entrySet = "/* Could not access entrySet */"
+      size = "/* Could not access size */"
+      modCount = "/* Could not access modCount */"
+      threshold = "/* Could not access threshold */"
+      loadFactor = "/* Could not access loadFactor */"
+      keySet = "/* Could not access keySet */"
+      values = "/* Could not access values */"
+    rwl = class java.util.concurrent.locks.ReentrantReadWriteLock@69dcdfee
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      readerLock = "/* Could not access readerLock */"
+      writerLock = "/* Could not access writerLock */"
+      sync = "/* Could not access sync */"
+    mcToMCWMapRead = class java.util.concurrent.locks.ReentrantReadWriteLock$ReadLock@581e8e3d
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      sync = "/* Could not access sync */"
+    mcToMCWMapWrite = class java.util.concurrent.locks.ReentrantReadWriteLock$WriteLock@34949409
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      sync = "/* Could not access sync */"
+    raClassLoader = null
+    pmCounterLock = class com.ibm.ejs.j2c.PoolManager$PoolManagerLock@15c6b817
+    destroyMCWrapperListLock = class com.ibm.ejs.j2c.PoolManager$PoolManagerLock@1a6a26ee
+    totalConnectionCount = class java.util.concurrent.atomic.AtomicInteger@36292cf8
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      U = "/* Could not access U */"
+      VALUE = "/* Could not access VALUE */"
+      value = "/* Could not access value */"
+      serialVersionUID = "/* Could not access serialVersionUID */"
+    poolManagerBalancePoolLock = class com.ibm.ejs.j2c.PoolManager$PoolManagerLock@268dc2e8
+    waiterFreePoolLock = class com.ibm.ejs.j2c.PoolManager$PoolManagerLock@62bd02e
+    waiterCount = 0
+    allowConnectionRequests = true
+    connectionPoolShutDown = false
+    poolManagerTestConnectionLock = class com.ibm.ejs.j2c.PoolManager$PoolManagerLock@4d3ddb53
+    collectorCount = 0
+    mcWrappersToDestroy = class java.util.ArrayList@320c70e0
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      DEFAULT_CAPACITY = "/* Could not access DEFAULT_CAPACITY */"
+      EMPTY_ELEMENTDATA = "/* Could not access EMPTY_ELEMENTDATA */"
+      DEFAULTCAPACITY_EMPTY_ELEMENTDATA = "/* Could not access DEFAULTCAPACITY_EMPTY_ELEMENTDATA */"
+      elementData = "/* Could not access elementData */"
+      size = "/* Could not access size */"
+      modCount = "/* Could not access modCount */"
+    mcWrapperDoesExistInFreePool = true
+    synchronizedAllReady = false
+    dontNotifyWaiter = true
+    dontDecrementTotalCounter = false
+    unusedTimeoutEnabled = false
+    connectionTimeout = 30
+    maxConnections = 50
+    minConnections = 0
+    purgePolicy = class com.ibm.ws.jca.adapter.PurgePolicy@7a5e6ecb
+      EntirePool = class com.ibm.ws.jca.adapter.PurgePolicy@7a5e6ecb
+      FailingConnectionOnly = class com.ibm.ws.jca.adapter.PurgePolicy@1cf4cc4a
+      ValidateAllConnections = class com.ibm.ws.jca.adapter.PurgePolicy@40d049ed
+      $VALUES = class com.ibm.ws.jca.adapter.PurgePolicy[3]
+      name = "/* Could not access name */"
+      ordinal = "/* Could not access ordinal */"
+      hash = "/* Could not access hash */"
+    reapTime = 180
+    unusedTimeout = 1800
+    agedTimeout = -1
+    agedTimeoutMillis = -1000
+    holdTimeLimit = 10
+    maxSharedBuckets = 200
+    maxFreePoolHashSize = 100
+    maxNumberOfMCsAllowableInThread = 0
+    throwExceptionOnMCThreadCheck = false
+    waitersStartedTime = 0
+    waitersEndedTime = 0
+    parkedMCWrapper = null
+    createParkedConnection = true
+    parkedConnectionLockObject = class com.ibm.ejs.j2c.PoolManager$PoolManagerLock@5ed430ef
+    totalPoolConnectionRequests = 0
+    am = null
+    amLockObject = class com.ibm.ejs.j2c.PoolManager$PoolManagerLock@74598c8f
+    pmQuiesced = false
+    activeRequest = class java.util.concurrent.atomic.AtomicInteger@30591420
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      U = "/* Could not access U */"
+      VALUE = "/* Could not access VALUE */"
+      value = "/* Could not access value */"
+      serialVersionUID = "/* Could not access serialVersionUID */"
+    updateToPoolInProgressLockObject = class com.ibm.ejs.j2c.PoolManager$PoolManagerLock@10394ecd
+    updateToPoolInProgress = false
+    updateToPoolInProgressSleepTime = 250
+    activeTLSRequest = class java.util.concurrent.atomic.AtomicInteger@6f15576d
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      U = "/* Could not access U */"
+      VALUE = "/* Could not access VALUE */"
+      value = "/* Could not access value */"
+      serialVersionUID = "/* Could not access serialVersionUID */"
+    updateToTLSPoolInProgressLockObject = class com.ibm.ejs.j2c.PoolManager$PoolManagerLock@579093f4
+    updateToTLSPoolInProgress = class java.util.concurrent.atomic.AtomicBoolean@2f906532
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      VALUE = "/* Could not access VALUE */"
+      value = "/* Could not access value */"
+    updateToTLSPoolInProgressSleepTime = 250
+    writer = null
+    traceWriter = null
+    printWriter = null
+    tscdList = class java.util.Vector@306e86d9
+      elementData = "/* Could not access elementData */"
+      elementCount = "/* Could not access elementCount */"
+      capacityIncrement = "/* Could not access capacityIncrement */"
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      modCount = "/* Could not access modCount */"
+    logSerialReuseMessage = true
+    _quiesce = false
+    _quiesceTime = null
+    nonDeferredReaperAlarm = false
+    claimedVictimPercent = 0.0
+    enableInuseConnectionDestroy = true
+    localConnection_ = null
+    maxCapacity = 0
+    isThreadLocalConnectionEnabled = false
+    getConnectionMap = class java.util.concurrent.ConcurrentHashMap@247c6054
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      MAXIMUM_CAPACITY = "/* Could not access MAXIMUM_CAPACITY */"
+      DEFAULT_CAPACITY = "/* Could not access DEFAULT_CAPACITY */"
+      MAX_ARRAY_SIZE = "/* Could not access MAX_ARRAY_SIZE */"
+      DEFAULT_CONCURRENCY_LEVEL = "/* Could not access DEFAULT_CONCURRENCY_LEVEL */"
+      LOAD_FACTOR = "/* Could not access LOAD_FACTOR */"
+      TREEIFY_THRESHOLD = "/* Could not access TREEIFY_THRESHOLD */"
+      UNTREEIFY_THRESHOLD = "/* Could not access UNTREEIFY_THRESHOLD */"
+      MIN_TREEIFY_CAPACITY = "/* Could not access MIN_TREEIFY_CAPACITY */"
+      MIN_TRANSFER_STRIDE = "/* Could not access MIN_TRANSFER_STRIDE */"
+      RESIZE_STAMP_BITS = "/* Could not access RESIZE_STAMP_BITS */"
+      MAX_RESIZERS = "/* Could not access MAX_RESIZERS */"
+      RESIZE_STAMP_SHIFT = "/* Could not access RESIZE_STAMP_SHIFT */"
+      MOVED = "/* Could not access MOVED */"
+      TREEBIN = "/* Could not access TREEBIN */"
+      RESERVED = "/* Could not access RESERVED */"
+      HASH_BITS = "/* Could not access HASH_BITS */"
+      NCPU = "/* Could not access NCPU */"
+      serialPersistentFields = "/* Could not access serialPersistentFields */"
+      table = "/* Could not access table */"
+      nextTable = "/* Could not access nextTable */"
+      baseCount = "/* Could not access baseCount */"
+      sizeCtl = "/* Could not access sizeCtl */"
+      transferIndex = "/* Could not access transferIndex */"
+      cellsBusy = "/* Could not access cellsBusy */"
+      counterCells = "/* Could not access counterCells */"
+      keySet = "/* Could not access keySet */"
+      values = "/* Could not access values */"
+      entrySet = "/* Could not access entrySet */"
+      U = "/* Could not access U */"
+      SIZECTL = "/* Could not access SIZECTL */"
+      TRANSFERINDEX = "/* Could not access TRANSFERINDEX */"
+      BASECOUNT = "/* Could not access BASECOUNT */"
+      CELLSBUSY = "/* Could not access CELLSBUSY */"
+      CELLVALUE = "/* Could not access CELLVALUE */"
+      ABASE = "/* Could not access ABASE */"
+      ASHIFT = "/* Could not access ASHIFT */"
+      keySet = "/* Could not access keySet */"
+      values = "/* Could not access values */"
+    alarmThreadCounter = class java.util.concurrent.atomic.AtomicInteger@112324b1
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      U = "/* Could not access U */"
+      VALUE = "/* Could not access VALUE */"
+      value = "/* Could not access value */"
+      serialVersionUID = "/* Could not access serialVersionUID */"
+    abortConnectionsActionName = "abortConnections"
+    abortConnectionsInUse = "inuse"
+    amMaxInUseTimeLockObject = class com.ibm.ejs.j2c.PoolManager$PoolManagerLock@16b174a1
+    maxInUseTimeAlarmThreadCounter = class java.util.concurrent.atomic.AtomicInteger@723231f0
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      U = "/* Could not access U */"
+      VALUE = "/* Could not access VALUE */"
+      value = "/* Could not access value */"
+      serialVersionUID = "/* Could not access serialVersionUID */"
+    maxInUseTime = 0
+    amMaxInUseTime = null
+    maxInUseTimeThreadStarted = false
+    maxInUseTimeTaskTimerLockObject = class com.ibm.ejs.j2c.PoolManager$PoolManagerLock@358b9122
+    maxInUseTimeCollectorCount = 0
+  numberOfConnectionsInFreePool = 0
+  numberOfConnectionsAssignedToThisFreePool = 0
+  raClassLoader = null
+  fatalErrorNotificationTime = 0
+  _mcWrapperDoesNotExistInFreePool = false
+  _synchronizeInMethod = true
+  _notifyWaiter = false
+  _decrementTotalCounter = true
+  fop_gets = 0
+  fnop_gets = 0
+  freePoolQueuedRequests = 0
+  freePoolCreateManagedConnection = 0
+  numberOfClaimedVictims = 0
+  numberOfClaimedVictims_CRI_Only_Mismatch = 0
+  numberOfClaimedVictims_Subject_Only_Mismatch = 0
+  numberOfClaimedVictims_CRI_Subject_Mismatch = 0
+  numberOfClaimedVictims_MM_Only_Mismatch = 0
+  fop_get_notfound = 0
+  fnop_get_notfound = 0
+  gConfigProps = class com.ibm.ejs.j2c.J2CGlobalConfigProperties@42d48dda
+    tc = class com.ibm.websphere.ras.TraceComponent@cbd0240
+      strings[0] = "TraceComponent[com.ibm.ejs.j2c.J2CGlobalConfigProperties,class com.ibm.ejs.j2c.J2CGlobalConfigProperties,[WAS.j2c],com.ibm.ws.j2c.resources.J2CAMessages,null]"
+    serialVersionUID = 3666445884103132373
+    jndiName = "jdbc/gestioncontact"
+    XpathId = "dataSource[default-0]/connectionManager"
+    cfName = "jdbc/gestioncontact"
+    logMissingTranContext = false
+    validatingMCFSupported = true
+    sendClaimedVictomToGetConnection = false
+    raSupportsReauthentication = false
+    transactionResourceRegistration = null
+    checkManagedConnectionInstanceof = true
+    checkManagedConnectionInstanceofLock = class com.ibm.ejs.j2c.J2CGlobalConfigProperties$J2CLock@3d053d8e
+    checkManagedConnectionInstanceofInitialized = false
+    embeddedRa = false
+    embeddedRaInitialized = false
+    connectionSynchronizationProvider = false
+    connectionSynchronizationProviderInitialized = false
+    connectionPoolingEnabled = true
+    connectionPoolingEnabledInitialized = false
+    instanceOfDissociatableManagedConnection = false
+    instanceOfDissociatableManagedConnectionInitialized = false
+    commitPriority = 0
+    transactionSupport = class jakarta.resource.spi.TransactionSupport$TransactionSupportLevel@208c42f3
+      NoTransaction = class jakarta.resource.spi.TransactionSupport$TransactionSupportLevel@5e992de0
+      LocalTransaction = class jakarta.resource.spi.TransactionSupport$TransactionSupportLevel@2fc76494
+      XATransaction = class jakarta.resource.spi.TransactionSupport$TransactionSupportLevel@208c42f3
+      $VALUES = class jakarta.resource.spi.TransactionSupport$TransactionSupportLevel[3]
+      name = "/* Could not access name */"
+      ordinal = "/* Could not access ordinal */"
+      hash = "/* Could not access hash */"
+    dynamicEnlistmentSupported = false
+    smartHandleSupport = false
+    cciLocalTranSupported = true
+    connectionTimeout = 30
+    autoCloseConnections = true
+    maxConnections = 50
+    minConnections = 0
+    purgePolicy = class com.ibm.ws.jca.adapter.PurgePolicy@7a5e6ecb
+    reapTime = 180
+    unusedTimeout = 1800
+    agedTimeout = -1
+    agedTimeoutMillis = -1000
+    stopPoolRequests = false
+    maxSharedBuckets = 200
+    maxFreePoolHashSize = 100
+    holdTimeLimit = 10
+    numConnectionsPerThreadLocal = 0
+    orphanConnHoldTimeLimitSeconds = 10
+    maxInUseTime = 0
+    changeSupport = class java.beans.PropertyChangeSupport@43524aa3
+      map = "/* Could not access map */"
+      source = "/* Could not access source */"
+      serialPersistentFields = "/* Could not access serialPersistentFields */"
+      serialVersionUID = "/* Could not access serialVersionUID */"
+    vChangeSupport = class java.beans.VetoableChangeSupport@2a39c16a
+      map = "/* Could not access map */"
+      source = "/* Could not access source */"
+      serialPersistentFields = "/* Could not access serialPersistentFields */"
+      serialVersionUID = "/* Could not access serialVersionUID */"
+    raMetaDataProps = null
+    dsMetaDataProps = null
+    callResourceAdapterStatMethods = false
+    numberOfInuseConnections = 0
+    numberOfInuseConnectionsLockObject = class com.ibm.ejs.j2c.J2CGlobalConfigProperties$J2CLock@3e4460ee
+    numberOfFreeConnections = 0
+    numberOfFreeConnectionsLockObject = class com.ibm.ejs.j2c.J2CGlobalConfigProperties$J2CLock@7c9d360f
+    maxNumberOfMCsAllowableInThread = 0
+    parkIfDissociateUnavailable = false
+    throwExceptionOnMCThreadCheck = false
+    appName = null
+    modName = null
+    compName = null
+

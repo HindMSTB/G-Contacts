@@ -1,0 +1,8 @@
+
+ Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
+------+------+---------------------------+---------------------------+---------------------------
+     0      3 09/03/2024 13:14:04:194 WEST 09/03/2024 13:15:32:094 WEST java.lang.IllegalArgumentException com.ibm.ws.uow.UOWManagerImpl.runUnderCurrentUOW 1130
+                                                                            - C:\Users\user\Desktop\EST GI\g-note\target\liberty\wlp\usr\servers\g-noteServer\logs\ffdc\ffdc_24.03.09_13.14.04.0.log
+     1      1 10/03/2024 10:50:07:813 WET 10/03/2024 10:50:07:813 WET org.jboss.weld.exceptions.DeploymentException com.ibm.ws.cdi.liberty.CDIRuntimeImpl 478
+                                                                            - C:\Users\user\Desktop\EST GI\g-note\target\liberty\wlp\usr\servers\g-noteServer\logs\ffdc\ffdc_24.03.10_10.50.07.0.log
+------+------+---------------------------+---------------------------+---------------------------

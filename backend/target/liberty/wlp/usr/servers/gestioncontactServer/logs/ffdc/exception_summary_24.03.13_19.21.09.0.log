@@ -1,0 +1,12 @@
+
+ Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
+------+------+---------------------------+---------------------------+---------------------------
+     0      2 13/03/2024 19:21:08:336 WET 13/03/2024 19:21:33:030 WET com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException com.ibm.ejs.j2c.poolmanager.FreePool.createManagedConnectionWithMCWrapper 199
+                                                                            - C:\Users\user\Desktop\0Code\backend\target\liberty\wlp\usr\servers\gestioncontactServer\logs\ffdc\ffdc_24.03.13_19.21.08.0.log
+     1      2 13/03/2024 19:21:09:022 WET 13/03/2024 19:21:33:032 WET jakarta.resource.spi.ResourceAllocationException com.ibm.ws.rsadapter.jdbc.WSJdbcDataSource.getConnection 299
+                                                                            - C:\Users\user\Desktop\0Code\backend\target\liberty\wlp\usr\servers\gestioncontactServer\logs\ffdc\ffdc_24.03.13_19.21.09.0.log
+     2      2 13/03/2024 19:21:09:043 WET 13/03/2024 19:21:33:033 WET jakarta.persistence.PersistenceException com.ibm.ws.jpa.management.JPAPUnitInfo.createEMFactory 759
+                                                                            - C:\Users\user\Desktop\0Code\backend\target\liberty\wlp\usr\servers\gestioncontactServer\logs\ffdc\ffdc_24.03.13_19.21.09.1.log
+     3      1 13/03/2024 19:37:00:731 WET 13/03/2024 19:37:00:731 WET java.io.FileNotFoundException com.ibm.ws.annocache.classsource.internal.ClassSourceImpl_ClassLoader 179
+                                                                            - C:\Users\user\Desktop\0Code\backend\target\liberty\wlp\usr\servers\gestioncontactServer\logs\ffdc\ffdc_24.03.13_19.37.00.0.log
+------+------+---------------------------+---------------------------+---------------------------
